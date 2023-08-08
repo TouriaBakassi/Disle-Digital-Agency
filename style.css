@@ -1,0 +1,1990 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color1: rgb(228, 110, 53);
+  --color2: rgb(243, 243, 243);
+  --color3: rgb(22, 22, 22);
+  --color4: #848484;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+/* ......Loader Page..... */
+#loader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  background: var(--color4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#loader img {
+  width: 10em;
+  animation: scale 3s 2s infinite ease-in-out;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(0.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* ................... Loader Page End.......... */
+/* ................... Search Page Start.......... */
+
+.search-page {
+  min-width: 100%;
+  height: 100vh;
+  background-color: #000000f0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+
+.search-page.open {
+  display: flex;
+}
+
+.search-page .search-close {
+  width: 100%;
+  align-self: flex-end;
+  font-size: 30px;
+  color: #ffff;
+  background-color: #9f9f9f00;
+}
+
+.search-page .search-close i {
+  width: 100%;
+  text-align: end;
+  padding: 30px 40px;
+}
+
+.search-page .fa-xmark:hover {
+  background-color: #9f9f9f6e;
+}
+
+.search-page .search-case {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  align-self: center;
+  background-color: #e46d31;
+  color: #fff;
+  width: 40%;
+  height: 80px;
+  text-align: center;
+}
+
+.search-page .search-case input {
+  width: 85%;
+  height: 100%;
+  font-size: 25px;
+  color: #000;
+  outline: none;
+  border: none;
+}
+
+.search-page .search-case input::placeholder {
+  color: #000;
+  font-size: 25px;
+  font-weight: 600;
+  padding-left: 10px;
+}
+
+.search-page .search-case i {
+  width: 14%;
+  height: 100%;
+  font-size: 20px;
+  background-color: var(--color1);
+  line-height: 4;
+  cursor: pointer;
+}
+
+/* ........Address Email Reseaux first part ...... */
+.address-information {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color3);
+  color: var(--color4);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 10px 15px;
+}
+
+.email-address,
+.reseaux-socaiux {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.email-address .div {
+  padding: 1px 6px;
+}
+
+.email-address .div p {
+  margin: 0;
+}
+
+.email-address i {
+  color: var(--color1);
+}
+
+.reseaux-socaiux div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 3px;
+}
+
+.reseaux-socaiux div p {
+  padding: 2px 10px;
+  transition: all 0.3s ease-in;
+  margin: 0;
+}
+
+.reseaux-socaiux div p:hover {
+  color: #fff;
+  transition: all 0.3s ease-in;
+}
+
+.reseaux-socaiux div .span {
+  padding: 2px 5px;
+}
+
+.reseaux-socaiux div .span:hover {
+  color: var(--color4);
+}
+
+.reseaux-socaiux .reseaux {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reseaux-socaiux .reseaux i {
+  padding: 0px 10px;
+  font-size: 15px;
+  color: #fff;
+  transform: rotateY(0deg);
+}
+
+.reseaux-socaiux .reseaux i:hover {
+  color: var(--color1);
+  /* transform: transform 0.3s ease; */
+  transform: rotateY(180deg);
+  transition: all 0.5s ease-in;
+}
+
+/* ...................... First-section Start.......... */
+/* ............nav...... */
+.section {
+  width: 100%;
+}
+
+.First-section {
+  background-color: #000000;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 15px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid #ffffff1a;
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
+  /* position:sticky; */
+  /* top: 0px; */
+  z-index: 10;
+  color: #fff;
+  font-size: 16px;
+}
+
+nav img {
+  width: 10%;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 0px 15px;
+  position: relative;
+  height: 100%;
+}
+
+nav ul,
+nav ul li a {
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  padding: 30px 5px;
+  margin: 0;
+  position: relative;
+}
+
+.telephone {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 30px 5px;
+}
+
+.telephone i,
+.telephone p {
+  padding: 0px 20px;
+  margin: 0;
+}
+
+.telephone i {
+  animation: telephone 1s 2s infinite ease-in-out;
+}
+
+@keyframes telephone {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.7);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.telephone p {
+  border-left: 1px solid #ffffff1a;
+}
+
+/* .................Drops box ......*/
+.drop {
+  position: absolute;
+  top: 230%;
+  background-color: #fff;
+  width: 250px;
+  visibility: hidden;
+  transform: translateY(10%);
+  transition: all 0.3s ease-in;
+  text-align: start;
+  padding: 0px;
+  z-index: 80;
+}
+
+.drop li {
+  display: block;
+  padding: 10px 0px 10px 5px;
+}
+
+.drop li:hover {
+  color: #fff;
+  background-color: var(--color1);
+}
+
+.drop li a {
+  color: #000;
+  font-weight: 500;
+}
+
+nav>ul>li:hover .drop {
+  visibility: visible;
+  transform: translateY(0%);
+  transition: all 0.3s ease-in;
+}
+
+/* ................. NAV 2 Start................. */
+.nav2 {
+  width: 100%;
+  background-color: #fefefe;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 25px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  visibility: hidden;
+  transform: translateY(10%);
+  transition: all 0.3s ease-in;
+}
+
+.nav2.play {
+  visibility: visible;
+  transform: translateY(0%);
+  transition: all 0.3s ease-in;
+}
+
+.nav2 .logo-img {
+  width: 12%;
+}
+
+.nav2 .logo-img img {
+  width: 100%;
+}
+
+.nav2 .search {
+  padding: 0px 10px;
+  border-left: 1px solid #9f9f9f;
+}
+
+.nav2 .search i {
+  padding: 0px 15px;
+  font-size: 22px;
+  color: #777;
+  cursor: pointer;
+}
+
+/* ................. NAV 2 End................. */
+/* .......................... NAVBAR-MENU Start......... */
+.navbar-menu {
+  width: 30%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #181818;
+  color: #ffff;
+  z-index: 99;
+  overflow-y: scroll;
+  padding: 20px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  transform: translateX(350%);
+  transition: all 1s ease-in-out;
+}
+
+.navbar-menu.opened {
+  transform: translateX(0%);
+  transition: all 1s ease-in-out;
+}
+
+.navbar-menu .menu-close {
+  align-self: flex-end;
+  margin-bottom: 50px;
+}
+
+.navbar-menu .menu-close i {
+  font-size: 26px;
+}
+
+.navbar-menu .menu-img {
+  width: 35%;
+  margin-bottom: 50px;
+}
+
+.navbar-menu .menu-img img {
+  width: 100%;
+}
+
+.navbar-menu .little-navbar-menu {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.navbar-menu .little-navbar-menu details {
+  width: 100%;
+  cursor: pointer;
+  border-bottom: 0.5px solid rgba(98, 98, 98, 0.492);
+  padding: 20px;
+}
+
+.navbar-menu .menu-list {
+  list-style: none;
+  padding: 0;
+}
+
+.navbar-menu .menu-list li {
+  padding: 8px 0px;
+}
+
+.navbar-menu .menu-list li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar-menu .menu-list li:hover a {
+  color: var(--color1);
+}
+
+.navbar-menu .little-navbar-menu details summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-menu .little-navbar-menu details summary:hover {
+  color: var(--color1);
+}
+
+.navbar-menu .little-navbar-menu details summary::marker {
+  content: "";
+}
+
+.navbar-menu p {
+  color: #cccccc;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.navbar-menu .menu-reseaux {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0px;
+}
+
+.navbar-menu .menu-reseaux i {
+  margin: 0px 6px;
+  padding: 10px;
+  font-size: 17px;
+  color: #fff;
+  background-color: #000;
+  border-radius: 50%;
+  transform: rotateY(0deg);
+}
+
+.navbar-menu .menu-reseaux i:hover {
+  color: var(--color1);
+  /* transform: transform 0.3s ease; */
+  transform: rotateY(180deg);
+  transition: all 0.5s ease-in;
+}
+
+/* .......................... NAVBAR-MENU End......... */
+/* ..................Slider Section Start.......... */
+.swiper {
+  /* margin: 100px auto; */
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  padding: 20px 0px 0px 70px;
+}
+
+.swiper-slide div {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  animation: width 1.5s alternate ease-in-out;
+}
+
+@keyframes width {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.swiper-slide h1 {
+  font-size: 85px;
+  font-weight: 800;
+}
+
+.swiper-slide p {
+  font-size: 20px;
+  color: var(--color4);
+}
+
+/* ..........Button Hover Effect */
+.btn {
+  position: relative;
+  margin: 40px 0px 0px 0px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #fff;
+  padding: 25px 40px;
+  letter-spacing: 0.5rem;
+  transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
+  cursor: pointer;
+  user-select: none;
+}
+
+.btn:before,
+.btn:after {
+  content: "";
+  position: absolute;
+  transition: inherit;
+  z-index: -1;
+}
+
+.btn:hover {
+  color: var(--color2);
+  transition-delay: 0.5s;
+}
+
+.btn:hover:before {
+  transition-delay: 0s;
+}
+
+.btn:hover:after {
+  background: var(--color1);
+  transition-delay: 0.35s;
+}
+
+.from-left:before,
+.from-left:after {
+  top: 0;
+  width: 0;
+  height: 100%;
+}
+
+.from-left:before {
+  right: 0;
+  border: 1px solid var(--color1);
+  border-left: 0;
+  border-right: 0;
+}
+
+.from-left:after {
+  left: 0;
+}
+
+.from-left:hover:before,
+.from-left:hover:after {
+  width: 100%;
+}
+
+/* ........................... */
+.swiper-slide:nth-child(1n) {
+  background-color: rgb(71, 70, 70);
+}
+
+.swiper-slide:nth-child(2n) {
+  background-color: rgb(95, 95, 95);
+}
+
+/* .swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  top: -20%;
+  font-size: 18px;
+  padding: 30px;
+  color: #fff;
+  background-color: #000;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #fff;
+  background-color: var(--color1);
+} */
+
+/*.swiper-button-prev{
+     left: 85%; 
+    /* top: -26%;
+}
+.swiper-button-next{
+    /* left: 90%;
+}*/
+/*...................Section 1 end */
+/* ............... Section 2 start ............. */
+.section2 {
+  background-color: #000;
+  width: 100%;
+  position: relative;
+}
+
+.title {
+  padding: 30px 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  /* color: #777777fd;   */
+  color: #fff;
+}
+
+.title div {
+  width: 50%;
+}
+
+.title div p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.title div h3 {
+  font-weight: 800;
+  font-size: 50px;
+}
+
+.title-section2 div h3 {
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 50px;
+}
+
+.title>p {
+  width: 48%;
+}
+
+.line {
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: var(--color1);
+  margin: 5px;
+}
+
+.line-right {
+  margin-left: 20px;
+}
+
+.cards {
+  width: 100%;
+  padding: 30px 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.card:nth-child(1) {
+  background: url(./images/team-work1.avif);
+}
+
+.card:nth-child(2) {
+  background: url(./images/team-work2.avif);
+}
+
+.card:nth-child(3) {
+  background: url(./images/team-work3.avif);
+}
+
+.cards .card {
+  position: relative;
+  width: 31%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: bottom;
+  background-size: cover;
+  padding: 160px 20px 30px 20px;
+  border-radius: 0;
+  border-top: 3px solid var(--color1);
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
+}
+
+.cards .card h4 {
+  padding: 0em 5em;
+  font-weight: 800;
+  font-size: 18px;
+  color: var(--color1);
+}
+
+.cards .card p {
+  padding: 0em 2em;
+  font-weight: 600;
+  font-size: 15px;
+  /* color: #777777fd;   */
+  color: #fff;
+}
+
+.cards .card .card-icon {
+  position: absolute;
+  top: 90%;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 50%;
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
+}
+
+.cards .card img {
+  color: #fff;
+  background-color: var(--color1);
+  padding: 22px;
+  border-radius: 50%;
+  font-size: 22px;
+  width: 80px;
+  vertical-align: middle;
+}
+
+/* ............... Section 2 end ............. */
+/* ............... Section 3 start ............. */
+.section3 {
+  padding: 140px 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #777777fd;
+}
+
+.image-team-work {
+  width: 48%;
+}
+
+.image-team-work img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.work-description {
+  width: 48%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+
+.title-section3 {
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px 0px;
+}
+
+.title-section3 div h3 {
+  font-weight: 800;
+  color: #000;
+}
+
+.title-section3 p {
+  color: #000;
+  padding: 20px 0px 0px 0px;
+}
+
+.title-section3 div,
+.title-section3 p {
+  width: 100%;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.list li {
+  font-weight: 700;
+  color: #000;
+  padding: 5px 0px;
+}
+
+.list li i {
+  font-size: 17px;
+  color: var(--color1);
+  padding: 0px 3px 0px 0px;
+}
+
+.call {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.telephone2 {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.telephone2 i {
+  width: 10%;
+  font-size: 19px;
+  padding: 0px 3px 0px 0px;
+}
+
+.telephone2 div {
+  width: 90%;
+}
+
+.telephone2 p {
+  padding: 0;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.telephone2 h4 {
+  padding: 2px 0px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.since {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 50%;
+}
+
+.since div {
+  padding: 20px 40px;
+  background-color: var(--color2);
+  color: var(--color4);
+  text-align: center;
+  line-height: 1;
+  position: relative;
+}
+
+.since div::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -15%;
+  left: -15%;
+  border: 1px solid var(--color2);
+  z-index: -2;
+}
+
+.since div i {
+  color: var(--color1);
+  font-size: 18px;
+}
+
+.since div p {
+  margin: 3px 0px;
+}
+
+.work-description a {
+  text-align: center;
+  margin: 30px 0px 0px 0px;
+  color: #fff;
+  background-color: #000;
+  width: 70%;
+  border-radius: 0;
+  font-size: 16px;
+  letter-spacing: 8px;
+}
+
+/* ............... Section 3 end ............. */
+/* ............... Section 4 Start ............. */
+.section4 {
+  background-color: var(--color2);
+}
+
+.title-section4 {
+  width: 100%;
+}
+
+.title-section4 div h3 {
+  color: #000;
+  font-weight: 800;
+  font-size: 50px;
+}
+
+.title-section4 p {
+  color: #000;
+}
+
+.section4-content {
+  padding: 30px 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.section4-content .six-cards {
+  width: 78%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-right: 10px;
+}
+
+.section4-content .six-cards .card-item {
+  position: relative;
+  width: 32%;
+  background-color: #fff;
+  margin-bottom: 17px;
+}
+
+.section4-content .six-cards .card-item div {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-direction: column;
+  padding: 50px 0px 30px 0px;
+  transition: all 1s ease-in-out;
+}
+
+.section4-content .six-cards .card-item div h5 {
+  width: 100%;
+  align-self: flex-end;
+  background: linear-gradient(160deg, #f4f2f2, #fff);
+  font-size: 18px;
+  padding: 5px 15px;
+  color: #fff;
+  font-size: 20px;
+  transition: all 1s ease-in;
+}
+
+.section4-content .six-cards .card-item div h3 {
+  width: 100%;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 8px 25px 5px 25px;
+}
+
+.section4-content .six-cards .card-item div i {
+  padding: 25px;
+  position: absolute;
+  top: 10%;
+  left: 65%;
+  color: #fff;
+  background-color: var(--color1);
+  font-size: 30px;
+  border-radius: 50%;
+}
+
+.section4-content .six-cards .card-item div:hover {
+  background-color: var(--color1);
+  transition: all 1s ease-in;
+}
+
+.section4-content .six-cards .card-item div:hover h5 {
+  background: linear-gradient(160deg, rgb(247, 131, 74), #ff9560);
+  transition: all 1s ease-in;
+}
+
+.section4-content .six-cards .card-item div:hover h3 {
+  color: #fff;
+  transition: all 1s ease-in;
+}
+
+.section4-content .six-cards .card-item div:hover i {
+  color: var(--color1);
+  background-color: #fff;
+  transition: all 1s ease-in;
+}
+
+.section4-content .card-Annonce {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  background: linear-gradient(rgba(0, 0, 0, 0.496), black),
+    url(./images/team-office.avif);
+  background-size: cover;
+  padding: 2px 8px;
+}
+
+.section4-content .card-Annonce p {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--color1);
+}
+
+.section4-content .card-Annonce h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 25px;
+  line-height: 36px;
+  letter-spacing: -1px;
+}
+
+.section4-content .card-Annonce a {
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 700;
+  background-color: var(--color1);
+  color: #fff;
+  padding: 15px 26px;
+  margin-top: 10px;
+  transition: all 1s ease-in;
+}
+
+.section4-content .card-Annonce a:hover {
+  background-color: #000;
+  color: var(--color1);
+  transition: all 0.5s ease-in-out;
+}
+
+/* ............... Section 4 End ............. */
+/* ............... Section 5 Start ............. */
+.section5 {
+  padding: 50px 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title-section5 {
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.title-section5 div {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title-section5 div div .line {
+  margin: 2px 3px;
+}
+
+.title-section5 div div .line-right {
+  margin-left: 20px;
+}
+
+.title-section5 div h3 {
+  color: #000;
+}
+
+.title-section5 div p {
+  color: #000;
+}
+
+.section5 .projects {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ........For Swiper */
+.swiper2 {
+  width: 100%;
+  cursor: pointer;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.swiper2 .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  position: relative;
+  overflow: hidden;
+}
+
+.swiper2 .swiper-slide .imag-content {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-color: var(--color1);
+  clip-path: polygon(50% 0%, 100% 38%, 100% 100%, 0 100%, 0% 38%);
+  transform: translate(-100%, 100%);
+  padding: 30px;
+  transition: all 1s ease-in-out;
+}
+
+.swiper2 .swiper-slide .imag-content p span {
+  color: #dddddda5;
+  font-size: 12px;
+}
+
+.swiper2 .swiper-slide .imag-content span:hover {
+  color: #fff;
+}
+
+.swiper2 .swiper-slide .imag-content span:nth-child(2) {
+  color: #dddddda5;
+}
+
+.swiper2 .swiper-slide .imag-content h3 {
+  color: var(--color2);
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.swiper2 .swiper-slide .imag-content h3:hover {
+  color: rgba(255, 255, 255, 0.864);
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.swiper2 .swiper-slide:hover .imag-content {
+  transform: translate(0%, 100%);
+  visibility: visible;
+  transition: all 1s ease-in-out;
+}
+
+.swiper2 .swiper-slide img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+/* ............... Section 5 End ............. */
+/* ............... Section 6 start ............. */
+.section6 {
+  padding: 30px 70px;
+  width: 100%;
+}
+
+/* ........For Swiper3 */
+.swiper3 {
+  width: 100%;
+  cursor: pointer;
+  overflow: hidden;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.swiper3 .swiper-wrapper {
+  width: 100%;
+}
+
+.swiper3 .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  position: relative;
+}
+
+.swiper3 .swiper-slide {
+  width: 8%;
+  padding: 5px;
+}
+
+.swiper3 .swiper-slide img {
+  width: 100%;
+  filter: grayscale(1);
+  transition: all .4s ease-in-out;
+}
+.swiper3 .swiper-slide img:hover {
+  width: 100%;
+  filter: grayscale(0);
+  transition: all .4s ease-in-out;
+
+}
+/* ................. Section 6 end ............. */
+/* ................. Section 7 Start ............. */
+.section7 {
+  padding: 50px 70px;
+  width: 100%;
+  background-color: #8a8a8a;
+  /* position: relative; */
+}
+
+.chiffres-cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+}
+
+.chiffre-card {
+  width: 24%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.chiffre-card div {
+  width: 50%;
+  padding: 14px;
+  border: 1px solid var(--color1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+.chiffre-card div i {
+  font-size: 50px;
+  padding: 20px;
+  color: var(--color1);
+  background-color: #ffffff;
+  border: 1px solid var(--color1);
+}
+
+.chiffre-card h3 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #ffffff;
+  padding: 15px 0px 5px 0px;
+}
+
+.chiffre-card p {
+  font-size: 18px;
+  color: #cccccc;
+}
+
+.carte {
+  position: relative;
+  width: 100%;
+  margin-top: 80px;
+  padding: 68px 40px 70px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color1);
+}
+
+.carte div {
+  width: 20%;
+  position: static;
+}
+
+.carte img {
+  position: absolute;
+  top: -50%;
+  bottom: 0;
+  left: 2%;
+  vertical-align: bottom;
+}
+
+.carte h2 {
+  width: 50%;
+  font-size: 33px;
+  font-weight: 800;
+  color: #ffffff;
+  /* position: relative; */
+}
+
+.carte a {
+  width: 20%;
+  text-decoration: none;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+  background-color: #000;
+  font-size: 15px;
+  font-weight: 700;
+  transition: all .5s ease-in-out;
+}
+
+.carte a:hover {
+  color: #000;
+  background-color: #fff;
+  transition: all .5s ease-in-out;
+}
+
+/* ................. Section 7 end ............. */
+/* ................. Section 8 Start ............. */
+.section8{
+  padding: 50px 70px;
+  width: 100%;
+  background-color: #8a8a8a;
+  display: flex;justify-content: space-between;align-items: center;
+  flex-wrap: wrap;
+}
+.title-section8{
+  padding: 20px 4px;
+  width: 40%;
+  flex-direction: column;
+}
+.title-section8 div{
+  width: 100%;
+}
+.title-section8 div p{
+  color: #cccccc;
+}
+.title-section8 .swiper-button{
+  display: flex;justify-content: flex-start;align-items: center;
+  padding:30px 0px 10px 0px;
+}
+.title-section8 .swiper-button-next,
+.title-section8 .swiper-button-prev{
+position: static;
+padding: 30px 35px;
+margin: 0;
+display: flex;
+width: 40px;
+text-align: center;
+}
+.title-section8 .swiper-button-next i,
+.title-section8 .swiper-button-prev i{
+font-size: 22px;
+}
+.title-section8 .swiper-button-next{
+background-color: #000;
+color:#ffffff;
+}
+.title-section8 .swiper-button-prev{
+  background-color: #ffffff;
+  color:#000000;
+}
+.title-section8 .swiper-button-next:is(:hover,:focus),
+.title-section8 .swiper-button-prev:is(:hover,:focus){
+background-color: var(--color1);
+color: #fff;
+}
+.title-section8 .swiper-button-next::after,
+.title-section8 .swiper-button-prev::after{
+  display: none;
+}
+.section8 .mySwiper4{
+  width: 55%;
+  height: 100%;
+}
+.testimonials{
+  width: 100%;
+  padding-bottom: 10px;
+  display: flex;justify-content: space-between;align-items: flex-start;
+  border-radius: 40px 0px 0px 0px;
+}
+.testimonials .testimonial{
+  padding: 40px 40px 20px 40px;
+  display: flex;justify-content: space-between;align-items: flex-start;
+  flex-direction: column;
+  background-color: #fff;
+  color: #4f4f4f;
+  border-radius: 40px 0px 0px 0px;
+}
+.testimonial p{
+  font-size: 19px;
+  font-weight: 500;
+  /* font-style: italic; */
+  color: #3e3e3e;
+}
+.testimonial i{
+   font-size: 21px; 
+}
+.testimonial:hover i{
+  color: var(--color1);
+}
+.testimonial .customer{
+  animation: none;
+  width: 100%;
+  display: flex;justify-content: flex-start;align-items: flex-end;
+  flex-direction: row;
+  /* position: absolute;bottom: -8%; */
+ 
+}
+.testimonial .customer div{
+  animation: none;
+  display: flex;justify-content: center;
+  flex-direction: column;
+  padding: 5px 10px;
+  vertical-align: bottom;
+}
+.testimonial .customer div h4{
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  margin: 0;
+ }
+.testimonial .customer div p{
+  font-size: 13px;
+  font-weight: 400;
+   }
+/* ................. Section 8 end ............. */
+/* ................. Section 9 Start ............. */
+.section9{
+  width: 100%;
+  padding: 50px 70px;
+  background-color: #ffffff;
+}
+.team-members{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;align-items: center;
+  padding: 50px 0px;
+}
+.swiper5{
+  overflow: hidden;
+
+}
+.team-members .swiper-slide{
+  position: relative;
+   width: 31%;
+   padding: 1px 1px 0px 1px;
+  border-radius: 170px 170px 0 0;
+  background: linear-gradient(180deg, #ffffff, #ffffff);
+  transition: all .5s ease-in;
+}
+.team-members .swiper-slide:hover{
+  background: linear-gradient(180deg, var(--color1), #ffffff);
+  transition: all .5s ease-in;
+}
+.team-members .swiper-slide .team-member{
+ width: 100%;
+  text-align: center;
+  background: linear-gradient(180deg, #ffffff , #f0f0f0);
+  border-radius: 170px 170px 0 0;
+  display: flex;justify-content: center;align-items: center;
+  flex-direction: column;
+  padding-top: 10px;
+}
+.team-member .team-img{
+  width: 90%;
+  padding: 0 ; 
+  overflow: hidden;
+  border-radius: 160px 160px 0 0;
+  
+}
+.team-member .team-img img{
+  width: 100%;
+  transform-origin: center;
+  transition: all .5s ease-in;
+}
+.team-members .swiper-slide:hover img {
+  transform: scale(1.05);
+  transition: all .5s ease-in;
+}
+.swiper-slide .team-member .member-name{
+  width: 100%;
+  padding: 10px 0px;
+  background-color: #f0f0f0;
+  text-align: center;
+  align-items: center;
+}
+.team-member .member-name h4{
+  font-size: 22px;
+  font-weight: 800;
+  margin:0px 0px 3px 0px;
+  color: #000;
+}
+.team-member .member-name p{
+  font-size: 13px;
+  font-weight: 600;
+  color: #9f9f9f;
+}
+.team-member .member-name .share-icon{
+  font-size: 24px;
+  padding: 18px;
+  background-color: var(--color1);
+  color: #fff;
+  border-radius: 50%;
+  position: absolute;top: 4%;right: 8%;
+}
+.team-member .member-name .share{
+background-color: #fff;
+/* color: #000; */
+display: flex;flex-direction: column;
+position: absolute; top: 100%;right: 18%;
+padding: 5px 10px;
+opacity: 0;
+transition: all .5s ease-in;
+}
+.share-icon:hover .share , .team-members>div:hover .share{
+  top: 115%;
+  opacity: 1;
+  transition: all .5s ease-in-out;
+}
+.team-member .member-name .share i{
+  font-size: 15px;
+  color:#000;
+  padding: 5px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ................. Section 9 end ............. */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------------  Media Query of 1095
+-------------------------------------------------------------------------------------- */
+@media screen and (max-width: 1095px) {
+
+  /* ------------------- First Section */
+  .address-information {
+    display: none;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .nav2 {
+    visibility: visible;
+    transform: translateY(0%);
+  }
+
+  .search-page .search-case {
+    width: 80%;
+  }
+
+  .navbar-menu {
+    width: 100%;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+
+  .swiper-slide {
+    padding: 0px 10px;
+  }
+
+  .swiper-slide div {
+    width: 90%;
+    padding: 20px 0px 0px 0px;
+  }
+
+  .swiper-slide h1 {
+    font-size: 60px;
+    font-weight: 800;
+  }
+
+  .swiper-slide p {
+    font-size: 20px;
+    color: var(--color4);
+  }
+
+  /* --------------------------- Section 2 */
+  .title div {
+    width: 100%;
+  }
+
+  .title>p {
+    padding: 30px 0px;
+    width: 100%;
+  }
+
+  .cards {
+    width: 100%;
+    padding: 30px 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .cards .card {
+    position: relative;
+    width: 80%;
+    margin-bottom: 8em;
+    background-color: #cccccc;
+  }
+
+  /* ----------------------------- Section 3 */
+  .section3 {
+    padding: 100px 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #777777fd;
+  }
+
+  .image-team-work {
+    width: 80%;
+  }
+
+  .work-description {
+    width: 80%;
+    flex-direction: column;
+  }
+
+  .work-description .title-section3 div h3 {
+    color: #000;
+    font-size: 34px;
+  }
+
+  /* ...................... Section 4 ....... */
+  .title-section4 div h3 {
+    font-size: 34px;
+  }
+
+  .section4-content {
+    padding: 30px 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column wrap;
+  }
+
+  .section4-content .six-cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: 10px;
+  }
+
+  .section4-content .six-cards .card-item {
+    position: relative;
+    width: 48%;
+    background-color: #fff;
+    margin-bottom: 17px;
+  }
+
+  .section4-content .card-Annonce {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    background: linear-gradient(rgba(0, 0, 0, 0.496), rgba(0, 0, 0, 0.739)),
+      url(./images/team-office.avif);
+    background-size: cover;
+    background-position: center;
+    padding: 30px 40px;
+  }
+
+  /* ...................... Section 7 ....... */
+  .carte div {
+    display: none;
+  }
+
+  .carte img {
+    display: none;
+  }
+
+  .carte h2 {
+    width: 70%;
+    font-size: 34px;
+    font-weight: 800;
+    color: #ffffff;
+    /* position: relative; */
+  }
+
+  .carte a {
+    width: 26%;
+  }
+ }
+
+
+  /* -------------------------------------------------------------  Media Query of 900
+-------------------------------------------------------------------------------------- */
+  @media screen and (max-width: 900px) {
+
+    /* ------------------- First Section */
+    .swiper {
+      width: 100%;
+      height: 70vh;
+      position: relative;
+    }
+
+    .swiper-slide h1 {
+      font-size: 42px;
+      font-weight: 800;
+    }
+
+    .swiper-slide p {
+      font-size: 16px;
+      color: var(--color4);
+    }
+
+    /* ----------------------- Section 2 */
+    .title {
+      padding: 30px 20px;
+    }
+
+    .title div h3 {
+      font-size: 40px;
+      color: #000000;
+    }
+
+    .title div p {
+      color: #000000;
+    }
+
+    .title-section2 div h3 {
+      color: #ffffff;
+    }
+
+    .title-section2 div p {
+      color: #ffffff;
+    }
+
+    .cards {
+      width: 100%;
+      padding: 30px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      position: relative;
+    }
+
+    .cards .card {
+      position: relative;
+      width: 100%;
+    }
+
+    .cards .card h4 {
+      padding: 0em 5em;
+      font-weight: 800;
+      font-size: 15px;
+      color: var(--color1);
+    }
+
+    .cards .card p {
+      padding: 0em 2em;
+      font-weight: 600;
+      font-size: 13px;
+      /* color: #777777fd;   */
+      color: #fff;
+    }
+
+    /* ------------------------------- Section 3 */
+    .section3 {
+      padding: 60px 20px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #777777fd;
+    }
+
+    .image-team-work {
+      width: 100%;
+    }
+
+    .work-description {
+      width: 100%;
+      flex-direction: column;
+    }
+
+    .telephone2 {
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .since {
+      width: 80%;
+    }
+
+    .work-description a {
+      width: 80%;
+      font-size: 13px;
+      letter-spacing: 5px;
+      align-self: center;
+    }
+
+    /* .......................Section 4 ..... */
+    .section4-content {
+      padding: 30px 20px;
+    }
+
+    /* ..................... Section 5 ........ */
+    .section5 {
+      padding: 50px 20px;
+    }
+
+    /* ............... Section 6  ............. */
+    .section6 {
+      padding: 30px 20px;
+    }
+
+    /* ............... Section 7  ............. */
+    .section7 {
+      padding: 30px 20px;
+    }
+
+    .chiffre-card {
+      width: 49%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .carte {
+      position: relative;
+      width: 100%;
+      margin-top: 80px;
+      padding: 50px 40px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      background-color: var(--color1);
+    }
+
+    .carte h2 {
+      width: 90%;
+    }
+
+    .carte a {
+      width: 40%;
+      margin-top: 40px;
+    }
+    /* ........................ Section8 */
+    .section8{
+      padding: 40px 20px;
+      width: 100%;
+      /* background-color: #353434d4; */
+      display: flex;justify-content: center;align-items: center;
+      flex-wrap: wrap;
+    }
+    .title-section8{
+      padding: 20px 4px;
+      margin-bottom: 40px;
+      width: 100%;
+      flex-direction: column;
+    }
+    .title-section8 .swiper-button{
+      display: none;
+    }
+    .section8 .mySwiper4{
+      width: 90%;
+      height: 100%;
+    }
+    /* ................. Section 9 Start ............. */
+.section9{
+  padding: 30px 40px;
+}
+  }
+
+
+
+
+
+
+
+
+
+
+  /* -------------------------------------------------------------  Media Query of 500
+-------------------------------------------------------------------------------------- */
+  @media screen and (max-width: 500px) {
+    .work-description .call {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column-reverse wrap;
+      margin: 50px 0px;
+    }
+
+    /* ....................... Section 3  */
+    .section4-content .six-cards .card-item {
+      position: relative;
+      width: 100%;
+      background-color: #fff;
+      margin-bottom: 30px;
+    }
+
+    /* ............... Section 7  ............. */
+    .chiffres-cards {
+      justify-content: center;
+    }
+
+    .chiffre-card {
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .carte {
+      padding: 40px 20px;
+      /* justify-content: center; */
+    }
+    .carte h2 {
+      width: 100%;
+      font-size: 20px;
+    }
+    .carte a {
+      width: 100%;
+      margin-top: 40px;
+    }
+    /* ........................ Section8 */
+.testimonials .testimonial{
+  padding: 20px;
+}
+  }
+
+  
