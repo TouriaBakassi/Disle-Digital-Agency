@@ -158,7 +158,7 @@ var swiper5 = new Swiper(".mySwiper5", {
     // when window width is >= 900px
     900: {
       slidesPerView: 3,
-      spaceBetween: 100,
+      spaceBetween: 50,
     },
   },
 });
