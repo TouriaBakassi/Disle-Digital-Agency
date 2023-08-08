@@ -335,6 +335,7 @@ nav>ul>li:hover .drop {
   visibility: hidden;
   transform: translateY(10%);
   transition: all 0.3s ease-in;
+  display: none;
 }
 
 .nav2.play {
@@ -486,7 +487,7 @@ nav>ul>li:hover .drop {
 .swiper {
   /* margin: 100px auto; */
   width: 100%;
-  height: 100vh;
+  /* height: 60vh; */
   position: relative;
 }
 
@@ -497,7 +498,7 @@ nav>ul>li:hover .drop {
   font-size: 22px;
   font-weight: bold;
   color: #fff;
-  padding: 20px 0px 0px 70px;
+  padding: 40px 40px 50px 70px;
 }
 
 .swiper-slide div {
@@ -1220,7 +1221,7 @@ nav>ul>li:hover .drop {
 /* ................. Section 6 end ............. */
 /* ................. Section 7 Start ............. */
 .section7 {
-  padding: 50px 70px;
+  padding: 40px 70px;
   width: 100%;
   background-color: #8a8a8a;
   /* position: relative; */
@@ -1233,7 +1234,7 @@ nav>ul>li:hover .drop {
   align-items: center;
   text-align: center;
   flex-wrap: wrap;
-  padding: 40px 20px;
+  padding: 20px;
 }
 
 .chiffre-card {
@@ -1327,7 +1328,7 @@ nav>ul>li:hover .drop {
 /* ................. Section 7 end ............. */
 /* ................. Section 8 Start ............. */
 .section8{
-  padding: 50px 70px;
+  padding: 40px 70px;
   width: 100%;
   background-color: #8a8a8a;
   display: flex;justify-content: space-between;align-items: center;
@@ -1748,6 +1749,11 @@ transition: all .5s ease-in;
   @media screen and (max-width: 900px) {
 
     /* ------------------- First Section */
+    .nav2 {
+      visibility: visible;
+      transform: translateY(0%);
+      display: flex;
+    }
     .swiper {
       width: 100%;
       height: 70vh;
