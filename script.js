@@ -164,6 +164,35 @@ var swiper5 = new Swiper(".mySwiper5", {
 });
 
 
+//.................... Swiper Five 6
+
+var swiper6 = new Swiper(".mySwiper6", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    // when window width is >= 180px
+    180: {
+      slidesPerView: 1,
+      spaceBetween: 35,
+    },
+    // when window width is >= 500px
+    500: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    // when window width is >= 900px
+    960: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+    },
+  },
+});
+
 // ........................Show nav 2
 let nav2 = document.getElementById("nav2");
 
