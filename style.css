@@ -1789,6 +1789,12 @@ padding: 3px 0px;
  text-decoration: none;
  color: #3f3e3e;
  font-weight: 600;
+ transition: all .3s ease-in-out;
+ }
+  .footer .footer-col ul li a:hover{
+ color: var(--color1);
+ transition: all .3s ease-in-out;
+
  }
 /* ................. Footer End ............. */
 
