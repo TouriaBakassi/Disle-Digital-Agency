@@ -1643,14 +1643,154 @@ transition: all .4s ease-in-out;
 .section10 .blogs.swiper-wrapper .blog.swiper-slide .information-blog .date{
   width: max-content;
   background-color: var(--color1);
-  padding: 3px ;
+  padding: 6px ;
  position: absolute;top: 3%;left: 5%;
 }
 .section10 .blogs.swiper-wrapper .blog.swiper-slide .information-blog .date p{
   margin: 0;padding: 0;
-  font-size: 12px;letter-spacing: .4px;
+  font-size: 10px;letter-spacing: .4px;
+  color:#fff;
 }
 /* ................. Section 10 end ............. */
+/* ................. Section 11 start ............. */
+.section11{
+  width: 100%;
+  padding: 50px 0px;
+  display: flex;justify-content: space-between;align-items: stretch;
+}
+.section11 .contact{
+  width: 52%;
+  padding: 40px;
+  background: linear-gradient(140deg, rgb(24, 24, 24),rgb(107, 57, 34)),url(./images/contact-bgrd.png);
+}
+.section11 .title-section11{
+  width: 100%;  position: relative;
+
+align-items: flex-start;
+}
+.section11 .title-section11 h3{
+color: #ffff;
+}
+.section11 .title-section11 .phone{
+  position:absolute;
+  top: 44%;
+  bottom: 0;
+  right: -60%;
+  transform: rotate(90deg);
+  width: 100%;
+  height: 10vh;
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffff;
+  background-color: var(--color1);
+  padding: 30px 0px 40px 0px;
+text-align: center;
+  }
+.section11 .title-section11 form{
+  width: 100%;
+}
+.section11 .title-section11 form div{
+  width: 100%;
+  display: flex;justify-content: space-between;align-items: center;
+  padding-bottom: 20px;
+}
+.section11 .title-section11 form div input{
+  width: 48%;
+  padding: 12px 15px;
+  outline: none;
+}
+.section11 .title-section11 form textarea{
+  max-width: 100%; min-width: 100%;
+  max-height: 30vh; min-height: 30vh;
+  padding: 12px 15px;
+  outline: none;
+}
+.section11 .title-section11 form button{
+  padding: 20px 30px;
+  background-color: var(--color1);
+color: #fff;outline: none;border: none;
+font-size: 13px; font-weight: 700;
+margin: 18px 0px 0px 0px;
+letter-spacing: .4px;
+}
+.section11 .map{
+  width: 48%;
+}
+.section11 .map iframe{
+  width: 100%;
+  height: 100%;
+}
+/* ................. Section 11 end ............. */
+/* ................. Footer Start ............. */
+.footer{
+  width: 100%;
+  padding: 50px;
+  display: flex;justify-content: space-between;align-items: flex-start;
+}
+.footer .footer-col{
+  width: 25%;
+  padding: 10px;
+  display: flex;justify-content: space-between;align-items: flex-start;
+  flex-direction: column;
+}
+.footer .footer-col2{
+  width: 20%;
+}
+.footer .footer-col3{
+  width: 25%;
+}
+.footer .footer-col4{
+  width: 26%;
+}
+.footer .footer-col .footr-img{
+  width: 80%;
+}
+.footer .footer-col .footr-img img{
+  width: 100%;
+}
+.footer .footer-col1 p{
+  width: 100%;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 25px 0px;
+  color: #3f3e3e;
+}
+.footer .footer-col1 .reseaux-sociaux{
+  width: 60%;
+  display: flex;justify-content: space-between;align-items:flex-start;
+}
+.footer .footer-col1 .reseaux-sociaux i {
+  padding: 10px;
+  font-size: 15px;
+  color: #fff;
+  transform: rotateY(0deg);
+  background-color: #000;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+.footer .footer-col1 .reseaux-sociaux i:hover {
+  color: var(--color1);
+  /* transform: transform 0.3s ease; */
+  transform: rotateY(180deg);
+  transition: all 0.5s ease-in;
+}
+.footer .footer-col h4{
+ font-size: 24px;
+ font-weight: 800;
+}
+.footer .footer-col ul{
+padding: 3px 0px;
+ }
+.footer .footer-col ul li{
+  list-style: none;
+  padding: 6px 0px;
+ }
+ .footer .footer-col ul li a{
+ text-decoration: none;
+ color: #3f3e3e;
+ font-weight: 600;
+ }
+/* ................. Footer End ............. */
 
 
 
@@ -2051,7 +2191,40 @@ transition: all .4s ease-in-out;
 .section10 .title-section10{
   width: 90%;
 }
-  }
+/* ................. Section 11 start ............. */
+.section11{
+  width: 100%;
+  padding: 50px 0px 10px 0px;
+  display: flex;justify-content: space-between;align-items: stretch;
+  flex-wrap: wrap;
+}
+.section11 .contact{
+  width: 100%;
+  padding: 40px 20px;
+  background: linear-gradient(140deg, rgb(24, 24, 24),rgb(107, 57, 34)),url(./images/contact-bgrd.png);
+}
+.section11 .map{
+  width: 100%;
+  height: 50vh;
+}
+.section11 .title-section11 .phone{
+  display: none;
+}
+/* ................. Footer ............. */
+.footer{
+  width: 100%;
+  padding: 40px 20px;
+  display: flex;justify-content: space-between;align-items: flex-start;
+  flex-wrap: wrap;
+}
+.footer .footer-col{
+  width: 50%;
+  margin-bottom: 25px;
+}
+.footer .footer-col .footr-img{
+  width: 50%;
+}
+}
 
 
 
@@ -2117,6 +2290,30 @@ transition: all .4s ease-in-out;
 .section10 .title-section10{
   width: 100%;
   padding: 5px 0px 10px 0px;
+}
+/* ................. Section 10 start ............. */
+.section11 .title-section11 form div{
+  width: 100%;
+  display: flex;justify-content: space-between;align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 15px;
+}
+.section11 .title-section11 form div input{
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 18px;
+  outline: none;
+}
+/* ................. Footer ............. */
+.footer{
+  width: 100%;
+  padding: 40px 20px;
+  display: flex;justify-content: space-between;align-items: flex-start;
+  flex-wrap: wrap;
+}
+.footer .footer-col{
+  width: 100%;
+  margin-bottom: 25px;
 }
   }
 
