@@ -2334,9 +2334,9 @@ transition: all .3s ease-in-out;
   margin-bottom: 25px;
   padding: 10px 0px;
 }
-.footer .footer-col ul li a{
-  /* font-size: 1px; */
-}
+/*.footer .footer-col ul li a{
+   font-size: 1px; 
+}*/
 .Copyright img{
   width: 30%;
  }
