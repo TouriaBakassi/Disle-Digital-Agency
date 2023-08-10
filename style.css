@@ -21,7 +21,7 @@ body {
 }
 /* */
 .contain{
-  width: min(100% - 0px, 90em); 
+  width: min(100% - 0px, 95em); 
    margin-inline: auto; 
   /* width: 100%;
   margin: 0;  */
