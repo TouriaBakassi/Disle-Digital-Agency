@@ -1,4 +1,5 @@
-
+let screen = window.innerWidth;
+console.log(screen);
 // ......Swiper One
 var swiper = new Swiper(".mySwiper", {
   grabCursor: true,

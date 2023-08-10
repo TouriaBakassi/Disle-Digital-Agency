@@ -17,8 +17,15 @@ html {
 
 body {
   font-family: "Manrope", sans-serif;
+  width: 100%;
 }
-
+/* */
+.contain{
+  width: min(100% - 0px, 80em); 
+   margin-inline: auto; 
+  /* width: 100%;
+  margin: 0;  */
+}
 /* ......Loader Page..... */
 #loader {
   position: fixed;
@@ -209,6 +216,7 @@ body {
 
 .First-section {
 background-color: #fff;
+overflow: hidden;
 }
 
 nav {
@@ -487,11 +495,12 @@ nav>ul>li:hover .drop {
 
 /* .......................... NAVBAR-MENU End......... */
 /* ..................Slider Section Start.......... */
-.swiper {
+.swiper1 {
   /* margin: 100px auto; */
   width: 100%;
-  /* height: 60vh; */
+  /* height: 50vh; */
   position: relative;
+  background:linear-gradient(to bottom,rgb(232, 140, 64) ,#000) 
 }
 
 .swiper-slide {
@@ -1388,12 +1397,14 @@ color: #fff;
 .section8 .mySwiper4{
   width: 55%;
   height: 100%;
+  background-color: #fff;
 }
 .testimonials{
   width: 100%;
   padding-bottom: 10px;
   display: flex;justify-content: space-between;align-items: flex-start;
   border-radius: 40px 0px 0px 0px;
+  background-color: #fff;
 }
 .testimonials .testimonial{
   padding: 40px 40px 20px 40px;
@@ -1661,11 +1672,12 @@ transition: all .4s ease-in-out;
 /* ................. Section 11 start ............. */
 .section11{
   width: 100%;
-  padding: 50px 0px;
+  padding: 50px 0px 0px 0px;
   display: flex;justify-content: space-between;align-items: stretch;
+  flex-flow: column wrap;
 }
 .section11 .contact{
-  width: 52%;
+  width: 100%;
   padding: 40px;
   background: linear-gradient(140deg, rgb(24, 24, 24),rgb(107, 57, 34)),url(./images/contact-bgrd.png);
 }
@@ -1678,6 +1690,7 @@ align-items: flex-start;
 color: #ffff;
 }
 .section11 .title-section11 .phone{
+  display: none;
   position:absolute;
   top: 44%;
   bottom: 0;
@@ -1720,7 +1733,8 @@ margin: 18px 0px 0px 0px;
 letter-spacing: .4px;
 }
 .section11 .map{
-  width: 48%;
+  width: 100%;
+  height: 40vh;
 }
 .section11 .map iframe{
   width: 100%;
