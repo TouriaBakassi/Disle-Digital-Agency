@@ -496,9 +496,7 @@ nav > ul > li:hover .drop {
 /* .......................... NAVBAR-MENU End......... */
 /* ..................Slider Section Start.......... */
 .swiper1 {
-  /* margin: 100px auto; */
   width: 100%;
-  /* height: 50vh; */
   position: relative;
   background: linear-gradient(to bottom, rgb(232, 140, 64), #000);
 }
@@ -603,37 +601,9 @@ nav > ul > li:hover .drop {
 }
 
 /* ........................... */
-.First-section .swiper-slide:nth-child(1n) {
+.First-section .swiper-slide{
   background: linear-gradient(to bottom, rgb(232, 140, 64), #000);
 }
-
-.First-section .swiper-slide:nth-child(2n) {
-  background: linear-gradient(to bottom, rgb(232, 140, 64), #000);
-}
-
-/* .swiper-button-next,
-.swiper-button-prev {
-  position: absolute;
-  top: -20%;
-  font-size: 18px;
-  padding: 30px;
-  color: #fff;
-  background-color: #000;
-}
-
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-  color: #fff;
-  background-color: var(--color1);
-} */
-
-/*.swiper-button-prev{
-     left: 85%; 
-    /* top: -26%;
-}
-.swiper-button-next{
-    /* left: 90%;
-}*/
 /*...................Section 1 end */
 /* ............... Section 2 start ............. */
 .section2 {
@@ -664,13 +634,13 @@ nav > ul > li:hover .drop {
 
 .title div h3 {
   font-weight: 800;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .title-section2 div h3 {
   color: #ffffff;
   font-weight: 800;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .title > p {
@@ -902,14 +872,20 @@ nav > ul > li:hover .drop {
 .work-description a {
   text-align: center;
   margin: 30px 0px 0px 0px;
+  padding: 20px 10px ;
   color: #fff;
   background-color: #000;
-  width: 70%;
+  width: 40%;
   border-radius: 0;
   font-size: 16px;
-  letter-spacing: 8px;
+  letter-spacing: 3px;
+  transition: all .4s ease-in-out;
 }
-
+.work-description a:hover{
+  color: #fff;
+  background-color: var(--color1);
+  transition: all .4s ease-in-out;
+}
 /* ............... Section 3 end ............. */
 /* ............... Section 4 Start ............. */
 .section4 {
@@ -923,7 +899,7 @@ nav > ul > li:hover .drop {
 .title-section4 div h3 {
   color: #000;
   font-weight: 800;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .title-section4 p {
@@ -1232,17 +1208,22 @@ nav > ul > li:hover .drop {
 }
 /* ................. Section 6 end ............. */
 /* ................. Section 7 Start ............. */
+.contain7{
+  width: 100%;
+  background: linear-gradient(to bottom, rgb(29, 29, 29), rgb(243, 243, 243));
+}
 .section7 {
   padding: 40px 70px;
   width: 100%;
-  background: linear-gradient(to bottom, rgb(29, 29, 29), rgb(243, 243, 243));
-  /* position: relative; */
+  /* background: linear-gradient(to bottom, rgb(29, 29, 29), rgb(243, 243, 243)); */
+  background-color: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  width: min(100% - 0px, 95em);
+  margin-inline: auto;
 }
-
 .chiffres-cards {
   width: 100%;
   display: flex;
@@ -1251,6 +1232,9 @@ nav > ul > li:hover .drop {
   text-align: center;
   flex-wrap: wrap;
   padding: 20px;
+  background-color: transparent;
+  border: 1px solid #5d5d5d;
+  /* border-radius: 10px; */
 }
 
 .chiffre-card {
@@ -1264,7 +1248,9 @@ nav > ul > li:hover .drop {
 .chiffre-card div {
   width: 50%;
   padding: 14px;
-  border: 1px solid var(--color1);
+  border: 1px solid #5d5d5d;
+
+  /* border: 1px solid var(--color1); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1289,7 +1275,7 @@ nav > ul > li:hover .drop {
 }
 
 .chiffre-card h3 {
-  font-size: 40px;
+  font-size: 38px;
   font-weight: 600;
   color: #ffffff;
   padding: 15px 0px 5px 0px;
@@ -1304,7 +1290,7 @@ nav > ul > li:hover .drop {
   position: relative;
   width: 80%;
   text-align: center;
-  margin-top: 80px;
+  margin-top: 100px;
   padding: 68px 40px 70px 40px;
   display: flex;
   justify-content: space-between;
@@ -1353,14 +1339,21 @@ nav > ul > li:hover .drop {
 
 /* ................. Section 7 end ............. */
 /* ................. Section 8 Start ............. */
-.section8 {
-  padding: 40px 70px;
+.contain8{
   width: 100%;
   background-color: rgb(243, 243, 243);
+}
+.section8 {
+  width: 100%;
+  /* background-color: rgb(243, 243, 243); */
+  background-color: transparent;
+  padding: 40px 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  width: min(100% - 0px, 95em);
+  margin-inline: auto;
 }
 .title-section8 {
   padding: 20px 4px;
@@ -1774,11 +1767,17 @@ nav > ul > li:hover .drop {
   align-items: stretch;
   flex-flow: column wrap;
 }
+.section11 .contain-contact{
+  width: 100%;
+  background-color: #000;
+}
 .section11 .contact {
   width: 100%;
-  padding: 40px;
+  padding: 40px 70px;
   background: linear-gradient(140deg, rgb(24, 24, 24), rgb(107, 57, 34)),
     url(./images/contact-bgrd.png);
+    width: min(100% - 0px, 95em);
+  margin-inline: auto;
 }
 .section11 .title-section11 {
   width: 100%;
@@ -1790,20 +1789,26 @@ nav > ul > li:hover .drop {
   color: #ffff;
 }
 .section11 .title-section11 .phone {
-  display: none;
-  position: absolute;
-  top: 44%;
-  bottom: 0;
-  right: -60%;
-  transform: rotate(90deg);
-  width: 100%;
-  height: 10vh;
   font-size: 22px;
   font-weight: 700;
   color: #ffff;
   background-color: var(--color1);
-  padding: 30px 0px 40px 0px;
+  padding: 26px 20px ;
   text-align: center;
+  transition: all .4s ease-in-out;
+}
+.section11 .title-section11 .phone:hover{
+  color: var(--color1);
+  background-color: #fff;
+  transition: all .4s ease-in-out;
+
+}
+.section11 .contact .paragraph{
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 0px;
+  color: #9c9c9c;
 }
 .section11 .title-section11 form {
   width: 100%;
@@ -1842,7 +1847,7 @@ nav > ul > li:hover .drop {
 }
 .section11 .map {
   width: 100%;
-  height: 40vh;
+  height: 40vh; 
 }
 .section11 .map iframe {
   width: 100%;
@@ -1853,6 +1858,8 @@ nav > ul > li:hover .drop {
 footer {
   width: 100%;
   padding: 0px;
+  background-color: rgb(29, 29, 29);
+
 }
 .footer {
   padding: 60px 50px 50px 50px;
@@ -1962,14 +1969,19 @@ footer {
   color: var(--color1);
   transition: all 0.3s ease-in-out;
 }
-.Copyright {
-  width: 100%;
+.contain-footer2{
+  background-color: rgb(23, 23, 23);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(23, 23, 23);
+  flex-wrap: wrap;
   color: #898989;
   padding: 30px 50px;
+}
+.Copyright {
+  width: 100%;
+  background-color: rgb(23, 23, 23);
+  
 }
 .Copyright p {
   font-size: 15px;
@@ -2205,14 +2217,16 @@ footer {
     color: #777;
     cursor: pointer;
   }
-  .swiper {
+  .swiper1 {
     width: 100%;
     height: 70vh;
     position: relative;
   }
-
+.swiper1 .swiper-slide{
+  width: 80%;
+}
   .swiper-slide h1 {
-    font-size: 42px;
+    font-size: 40px;
     font-weight: 800;
   }
 
@@ -2423,9 +2437,11 @@ footer {
   .section11 .title-section11 .phone {
     display: none;
   }
-
   .Copyright {
     width: 100%;
+  }
+.contain-footer2{
+  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2434,7 +2450,8 @@ footer {
     color: #898989;
     text-align: center;
     padding: 30px 20px;
-  }
+}
+  
   .Copyright p {
     margin-bottom: 8px;
   }
