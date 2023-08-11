@@ -5,7 +5,7 @@ var swiper = new Swiper(".mySwiper", {
   grabCursor: true,
   loop: true,
   autoplay: true,
-  delay: 6000,
+  delay: 9000,
   effect: "creative",
   creativeEffect: {
     prev: {
