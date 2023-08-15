@@ -6,16 +6,16 @@ var swiper = new Swiper(".mySwiper", {
   loop: true,
   autoplay: true,
   delay: 9000,
-  effect: "creative",
-  creativeEffect: {
-    prev: {
-      shadow: true,
-      translate: ["-20%", 0, -1],
-    },
-    next: {
-      translate: ["100%", 0, 0],
-    },
-  },
+  // effect: "creative",
+  // creativeEffect: {
+  //   prev: {
+  //     shadow: true,
+  //     translate: ["-20%", 0, -1],
+  //   },
+    // next: {
+    //   translate: ["100%", 0, 0],
+    // },
+  // },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
