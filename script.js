@@ -37,7 +37,7 @@ window.addEventListener("load", () => {
 });
 //.............. Swiper Two
 var swiper = new Swiper(".mySwiper2", {
-  slidesPerView: 3,
+  slidesPerView: 4,
   spaceBetween: 0,
   loop: true,
   freeMode: true,
@@ -60,14 +60,14 @@ var swiper = new Swiper(".mySwiper2", {
     },
     // when window width is >= 1000px
     1000: {
-      slidesPerView: 3,
+      slidesPerView: 4,
       spaceBetween: 30,
     },
   },
 });
 //............. Swiper Three 3
 var swiper = new Swiper(".mySwiper3", {
-  slidesPerView: 2,
+  slidesPerView: 5,
   spaceBetween: 20,
   loop:true,
   freeMode: true,
@@ -88,7 +88,7 @@ var swiper = new Swiper(".mySwiper3", {
     },
     // when window width is >= 1000px
     1000: {
-      slidesPerView: 4,
+      slidesPerView: 5,
       spaceBetween: 100,
     },
   },
@@ -159,6 +159,10 @@ var swiper5 = new Swiper(".mySwiper5", {
     // when window width is >= 900px
     900: {
       slidesPerView: 3,
+      spaceBetween: 50,
+    },
+    980: {
+      slidesPerView: 4,
       spaceBetween: 50,
     },
   },
