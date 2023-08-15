@@ -137,36 +137,36 @@ var swiper = new Swiper(".mySwiper4", {
 
 //.................... Swiper Five 5
 
-var swiper5 = new Swiper(".mySwiper5", {
-  slidesPerView: 3,
-  spaceBetween: 60,
-  loop: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  breakpoints: {
-    // when window width is >= 180px
-    180: {
-      slidesPerView: 1,
-      spaceBetween: 35,
-    },
-    // when window width is >= 700px
-    500: {
-      slidesPerView: 2,
-      spaceBetween: 50,
-    },
-    // when window width is >= 900px
-    900: {
-      slidesPerView: 3,
-      spaceBetween: 50,
-    },
-    980: {
-      slidesPerView: 4,
-      spaceBetween: 50,
-    },
-  },
-});
+// var swiper5 = new Swiper(".mySwiper5", {
+//   slidesPerView: 3,
+//   spaceBetween: 60,
+//   loop: true,
+//   pagination: {
+//     el: ".swiper-pagination",
+//     clickable: true,
+//   },
+//   breakpoints: {
+//     // when window width is >= 180px
+//     180: {
+//       slidesPerView: 1,
+//       spaceBetween: 35,
+//     },
+//     // when window width is >= 700px
+//     500: {
+//       slidesPerView: 2,
+//       spaceBetween: 50,
+//     },
+//     // when window width is >= 900px
+//     900: {
+//       slidesPerView: 3,
+//       spaceBetween: 50,
+//     },
+//     980: {
+//       slidesPerView: 4,
+//       spaceBetween: 50,
+//     },
+//   },
+// });
 
 
 //.................... Swiper Five 6

@@ -1082,10 +1082,14 @@ nav > ul > li:hover .drop {
 .section5 .projects {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
-
+.section5 .projects p{
+  text-align: center;
+  font-size: 18px;
+  color: #4f4f4f;
+}
 /* ........For Swiper */
 .swiper2 {
   width: 100%;
@@ -1209,7 +1213,7 @@ nav > ul > li:hover .drop {
 /* ................. Section 7 Start ............. */
 .contain7{
   width: 100%;
-  background: linear-gradient(to bottom, rgb(29, 29, 29),rgb(255, 255, 255) );
+  /* background: linear-gradient(to bottom, rgb(29, 29, 29),rgb(255, 255, 255) ); */
 }
 .section7 {
   padding: 40px 70px 30px 70px;
@@ -1222,6 +1226,7 @@ nav > ul > li:hover .drop {
   flex-direction: column;
   width: min(100% - 0px, 95em);
   margin-inline: auto;
+  background-color: #e46d31;
 }
 .chiffres-cards {
   width: 100%;
@@ -1351,7 +1356,7 @@ padding-top: 60px 0px 0px 30px ;
 }
 .section8 {
   width: 100%;
-  /* background-color: rgb(243, 243, 243); */
+  background-color: rgb(243, 243, 243);
   /* background-color: rgb(255, 255, 255); */
   background-color: transparent;
   padding: 30px 70px 40px 70px;
@@ -1773,18 +1778,19 @@ padding-top: 60px 0px 0px 30px ;
   justify-content: space-between;
   align-items: stretch;
   flex-flow: column wrap;
+  background: linear-gradient(140deg, rgb(24, 24, 24), rgb(107, 57, 34)),
+    url(./images/contact-bgrd.png);
 }
 .section11 .contain-contact{
   width: 100%;
-  background-color: #000;
+ background-color: #000;
 }
 .section11 .contact {
   width: 100%;
   padding: 40px 70px;
-  background: linear-gradient(140deg, rgb(24, 24, 24), rgb(107, 57, 34)),
-    url(./images/contact-bgrd.png);
+  
     width: min(100% - 0px, 95em);
-  margin-inline: auto;
+  margin-inline: auto; 
 }
 .section11 .title-section11 {
   width: 100%;
