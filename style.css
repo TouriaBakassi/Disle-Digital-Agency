@@ -512,7 +512,7 @@ nav > ul > li:hover .drop {
 }
 
 .swiper-slide div {
-  width: 60%;
+  width: 80%;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
