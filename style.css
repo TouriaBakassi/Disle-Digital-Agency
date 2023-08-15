@@ -502,6 +502,7 @@ nav > ul > li:hover .drop {
 }
 
 .swiper1 .swiper-slide {
+  width: 80%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -512,7 +513,7 @@ nav > ul > li:hover .drop {
 }
 
 .swiper-slide div {
-  width: 80%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -602,6 +603,7 @@ nav > ul > li:hover .drop {
 
 /* ........................... */
 .First-section .swiper-slide{
+  width: 80%;
   background: linear-gradient(to bottom, rgb(232, 140, 64), #000);
 }
 /*...................Section 1 end */
@@ -2494,6 +2496,13 @@ footer {
   }
 }
 
+/* Media Query of 750 */
+@media screen and (max-width: 750px) {
+.swiper1 .swiper-slide h1 {
+  font-size: 39px;
+  font-weight: 800;
+}
+ }
 /* -------------------------------------------------------------  Media Query of 500
 -------------------------------------------------------------------------------------- */
 @media screen and (max-width: 500px) {
@@ -2520,7 +2529,7 @@ footer {
     padding: 80px 20px 80px 20px;
   }
   .swiper1 .swiper-slide h1 {
-    font-size: 35px;
+    font-size: 34px;
     font-weight: 800;
   }
   .swiper1 .swiper-slide p {
