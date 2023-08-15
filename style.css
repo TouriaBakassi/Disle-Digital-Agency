@@ -733,7 +733,7 @@ nav > ul > li:hover .drop {
 /* ............... Section 2 end ............. */
 /* ............... Section 3 start ............. */
 .section3 {
-  padding: 140px 70px;
+  padding: 140px 70px 60px 70px;
   width: 100%;
   display: flex;
   justify-content: space-between;
