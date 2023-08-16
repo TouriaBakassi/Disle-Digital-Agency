@@ -1,0 +1,96 @@
+/* ................ Style Page Services 1 */
+.pages-service1{
+    width: 100%;
+    padding: 30px 70px;
+    display: flex;justify-content: space-between;align-items: center;
+    flex-wrap:nowrap; flex-direction: column;
+
+}
+.page1-title{
+    width: 100%;
+    display: flex;justify-content: center;align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: min(100% - 0px, 95em);
+  margin-inline: auto;
+}
+.page1-title h2{
+    font-size: 28px;
+    font-weight: 800;
+  margin: 10px 0px;
+}
+.page1-title p{
+    width: 90%;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 0px;
+}
+.page1-articles{
+    width: min(100% - 0px, 95em);
+  margin-inline: auto;
+  display: flex;justify-content: space-between;align-items: center;
+  flex-wrap: wrap;
+}
+.page1-article{
+    width: 100%;
+    padding: 40px 0px;
+    display: flex;justify-content: space-between;align-items: center;
+    flex-wrap: wrap;
+}
+.page1-article .img-article{
+width: 48%;
+}
+.page1-article .img-article img{
+    width: 100%;
+    }
+.page1-article .content-article{
+    width: 48%;
+    }
+.page1-article .content-article h4{
+    font-size: 26px;
+    font-weight:800 ;
+    padding: 15px 0px;
+    }
+.page1-article .content-article p{
+    font-size:15px ;
+    font-weight: 600;
+    }
+.page1-article2{
+    flex-flow: row-reverse;
+}
+
+
+
+/* .......................Media Query of 900px */
+@media screen and (max-width:950px) {
+    .pages-service1{
+        width: 100%;
+    padding: 30px 30px;
+ }
+ .page1-title h2{
+    font-size: 26px;
+}
+    .page1-title p{
+        width: 100%;
+        font-size: 15px;
+    }
+    .page1-article{
+        flex-direction: column;
+    padding: 10px 0px;
+    }
+    .page1-article .img-article{
+        width: 100%;
+        }
+    .page1-article .content-article{
+        width: 100%;
+        padding: 20px 0px;
+        }
+    .page1-article .content-article h4{
+        font-size: 24px;
+        font-weight:800 ;
+        }
+    .page1-article .content-article p{
+        font-size:14px ;
+        font-weight: 600;
+        }
+}
