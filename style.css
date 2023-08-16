@@ -2508,7 +2508,6 @@ footer {
     text-align: center;
     padding: 30px 20px;
 }
-  
   .Copyright p {
     margin-bottom: 8px;
   }
@@ -2523,14 +2522,16 @@ footer {
     width: 100%;
     padding: 50px 20px 30px 20px;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
   }
   .footer .footer-col {
     width: 100%;
     margin-bottom: 25px;
     padding: 10px 0px;
+    align-items: center;
+    text-align: center;
   }
   /*.footer .footer-col ul li a{
    font-size: 1px; 
