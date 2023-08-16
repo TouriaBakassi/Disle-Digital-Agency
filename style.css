@@ -224,7 +224,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 15px;
+  padding: 0px 25px;
   /* background-color: rgba(255, 255, 255, 0.5); */
   border: 1px solid #ffffff1a;
   /* box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1); */
@@ -255,11 +255,31 @@ nav ul li a {
   text-decoration: none;
   color: #fff;
   font-size: 16px;
-  padding: 30px 5px;
+  padding: 18px 5px;
   margin: 0;
+  font-weight: 600;
   position: relative;
 }
-
+nav ul li a:hover{
+  color: #000;
+  transition: all .4s ease-in-out;
+}
+.tele-btn{
+  background-color: var(--color3);
+  color: white;
+  border: 1px solid white;
+  padding: 10px 20px;
+  transition: all .4s ease-in-out;
+}
+.tele-btn:hover{
+  background-color: white;
+  border: 1px solid var(--color3);
+  transition: all .4s ease-in-out;
+}
+.tele-btn:hover>a{
+  color: var(--color3);
+  transition: all .4s ease-in-out;
+}
 .telephone {
   display: flex;
   justify-content: space-between;
@@ -1213,6 +1233,7 @@ nav > ul > li:hover .drop {
 /* ................. Section 7 Start ............. */
 .contain7{
   width: 100%;
+  background-color: #e46d31;
   /* background: linear-gradient(to bottom, rgb(29, 29, 29),rgb(255, 255, 255) ); */
 }
 .section7 {
@@ -1493,6 +1514,17 @@ padding-top: 60px 0px 0px 30px ;
 }
 .swiper5 {
   overflow: hidden;
+}
+.swiper5  p{
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color3);
+  word-spacing: 5px;
+  text-align-last: left;
+}
+.swiper5  p::first-letter{
+  font-size: 30px;
+  color: var(--color1);
 }
 .team-members .swiper-slide {
   position: relative;
@@ -1819,9 +1851,11 @@ padding-top: 60px 0px 0px 30px ;
 .section11 .contact .paragraph{
   width: 100%;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
+  color: #bbbaba;
+  word-spacing: 5px;
+  text-align-last: left;
   padding: 12px 0px;
-  color: #9c9c9c;
 }
 .section11 .title-section11 form {
   width: 100%;
