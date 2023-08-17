@@ -1,0 +1,19 @@
+
+.blog-section{
+    width: 100%;
+}
+.blogs{
+    width: 100%;
+    /* width: min(100% - 0px, 95em); 
+     margin: auto; */
+    padding: 50px 70px;
+    display: flex;justify-content: space-between;align-items: center;
+    flex-wrap: wrap;
+
+}
+.blog{
+width: 32%;
+text-align: center;
+padding: 10px;
+margin-bottom: 40px;
+}
