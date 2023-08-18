@@ -1,6 +1,10 @@
 @import url(./styles/style-creation-societe.css);
 
 @import url(./styles/style-blog.css);
+
+@import url(./styles/blog-details-page.css);
+
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -1951,7 +1955,7 @@ footer {
 }
 .footer .footer-col1 p {
   width: 100%;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
   padding: 25px 6px;
   color: #979797;
@@ -1982,7 +1986,7 @@ footer {
   transition: all 0.5s ease-in;
 }
 .footer .footer-col h4 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 800;
   padding-bottom: 20px;
   position: relative;
@@ -2020,7 +2024,7 @@ footer {
 .footer .footer-col ul li a {
   text-decoration: none;
   color: #898989;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
   transition: all 0.3s ease-in-out;
 }
@@ -2043,7 +2047,7 @@ footer {
   
 }
 .Copyright p {
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 600;
   margin: 0;
 }
@@ -2059,7 +2063,7 @@ footer {
   /* filter: drop-shadow(10px 8px 6px #d5d5d5); */
 }
 .Copyright div a {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
   text-decoration: none;
   color: #898989;
