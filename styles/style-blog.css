@@ -24,7 +24,7 @@ body{
     flex-wrap: wrap;
 }
 .all-blogs .blog-item{
-width: 30%;
+width: 31%;
 margin:15px 10px;
 border: 1px solid rgb(221, 221, 223);
 border-radius: 10px;
@@ -74,7 +74,7 @@ transition: all .4s ease-in-out;
 
 
 /* .......................Media Query of 900px */
-@media screen and (max-width:900px) {
+@media screen and (max-width:930px) {
     .blogs-section{
         width: 100%;
         margin: 0;
