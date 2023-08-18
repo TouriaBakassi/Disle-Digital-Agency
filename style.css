@@ -1,4 +1,5 @@
 @import url(./styles/style-creation-societe.css);
+
 @import url(./styles/style-blog.css);
 * {
   box-sizing: border-box;
@@ -1968,8 +1969,11 @@ footer {
   color: #fff;
   transform: rotateY(0deg);
   background-color: #000;
-  margin-right: 12px;
+  margin: 0px 8px;
   border-radius: 10px;
+}
+.footer .footer-col1 .reseaux-sociaux i:first-child{
+  margin-left: 0px;
 }
 .footer .footer-col1 .reseaux-sociaux i:hover {
   color: var(--color1);
@@ -2653,6 +2657,10 @@ footer {
     margin-bottom: 18px;
     outline: none;
   }
+/*  .......... Footer */
+.footer .footer-col1 .reseaux-sociaux {
+  width: 90%;
+}
 }
 
 /* .....................Import file Style  */

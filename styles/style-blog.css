@@ -1,19 +1,99 @@
-
-.blog-section{
+body{
     width: 100%;
-}
-.blogs{
+ } 
+.blogs-section{
     width: 100%;
-    /* width: min(100% - 0px, 95em); 
-     margin: auto; */
+    margin: 0;
     padding: 50px 70px;
-    display: flex;justify-content: space-between;align-items: center;
-    flex-wrap: wrap;
-
+    /* border: 3px solid red; */
+    display: flex;justify-content: center;align-items: center;
 }
-.blog{
-width: 32%;
+.blogs-section .all-blogs{
+    width: min(100% - 0px, 95em);
+  margin-inline: auto;
+    padding: 0;
+    /* border: 3px solid green; */
+    display: flex;justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.all-blogs .blog-item{
+width: 30%;
+margin:15px 10px;
+border: 1px solid rgb(221, 221, 223);
+border-radius: 10px;
+transition: all .3s ease-in-out;
+}
+.all-blogs .blog-item:hover{
+    border: 1px solid var(--color1);
+    transition: all .3s ease-in-out;
+    }
+.all-blogs .blog-item .imag-blog{
+width: 100%;
+border-radius:10px 10px 0px 0px;
+overflow: hidden;
+}
+.all-blogs .blog-item .imag-blog img{
+    width: 100%;
+    vertical-align: middle;transition: all .4s ease-in-out;
+    border-radius: 10px 10px 0px 0px;
+    }
+.all-blogs .blog-item .content-blog{
+width: 100%;
 text-align: center;
 padding: 10px;
-margin-bottom: 40px;
+}
+.all-blogs .blog-item .content-blog h3{
+font-size: 26px;
+font-weight: 600;
+color: #000;
+transition: all .4s ease-in-out;
+} 
+.all-blogs .blog-item .content-blog p{
+    font-size:15px ;
+    font-weight: 500;
+    color: #292929;
+    }      
+.all-blogs .blog-item:hover .imag-blog img{
+    transform: scale(1.05);
+    transform-origin: center;
+    transition: all .4s ease-in-out;
+}
+.all-blogs .blog-item:hover .content-blog h3{
+    color: var(--color1);
+    transition: all .4s ease-in-out;
+}
+
+
+
+
+/* .......................Media Query of 900px */
+@media screen and (max-width:900px) {
+    .blogs-section{
+        width: 100%;
+        margin: 0;
+        padding: 50px 20px;
+    }
+    .all-blogs .blog-item{
+        width: 46%;
+ }
+
+}
+
+
+
+/* .......................Media Query of 550px */
+@media screen and (max-width:550px) {
+    .blogs-section{
+        width: 100%;
+        margin: 0;
+        padding: 50px 20px;
+    }
+    .blogs-section .all-blogs {
+       justify-content: center;
+ }
+    .all-blogs .blog-item{
+        width: 95%;
+ }
+
 }

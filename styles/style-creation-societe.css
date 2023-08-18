@@ -1,7 +1,10 @@
 /* ................ Style Page Services 1 */
+body{
+    width: 100%;
+}
 .nav-services-page{
     position: fixed;
-    top: 0;left: 0;
+    top: 0;left: 0;right: 0;
     z-index: 100;
 }
 .nav2-services-page{
@@ -18,11 +21,8 @@
 }
 .introduction-image-page h2{
 text-align: center;
-margin-inline: auto;
 color: #fff;
 font-weight: 700;
-/* width: min(100% - 0px, 95em);
-    margin-inline: auto; */
  }
  .introduction-image-page h4{
     text-align: center;
@@ -122,4 +122,17 @@ width: 48%;
         font-size:14px ;
         font-weight: 600;
         }
+}
+
+
+
+/* .......................Media Query of 900px */
+@media screen and (max-width:550px) {
+.introduction-image-page h2{
+   
+    font-size:26px ;
+     }
+     .introduction-image-page h4{
+        font-size: 13px;
+}
 }
