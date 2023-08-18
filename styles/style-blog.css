@@ -1,6 +1,12 @@
 body{
     width: 100%;
  } 
+.intro-blog-page{
+   width: 100%;
+   height: 45vh;
+   background: url(../images/blogs-backgrnd.jpg) no-repeat ;
+   background-size: cover;background-position: bottom;
+ }
 .blogs-section{
     width: 100%;
     margin: 0;
