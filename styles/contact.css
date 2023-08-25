@@ -5,16 +5,21 @@
     /* padding: 50px 70px; */
 }
 .head-contact{
-    width: 100%;
-    padding: 30px 70px;
+   width: 100%;
     background-color: rgb(243, 242, 242)
+}
+.head-contact>div{
+     width: min(100% - 0px, 95em);
+     margin-inline: auto; 
+    padding: 30px 70px;
 }
 .head-contact h2{
     font-size: 28px;
     font-weight: 700;
 }
 .content-contact{
-    width: 100%;
+    width: min(100% - 0px, 95em);
+     margin-inline: auto; 
     padding: 55px 70px;
     display: flex;justify-content: space-between;align-items: flex-start;
     flex-wrap: wrap;

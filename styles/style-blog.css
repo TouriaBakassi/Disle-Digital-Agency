@@ -18,14 +18,29 @@ body{
 .blogs-section{
     width: 100%;
     margin: 0;
-    padding: 50px 70px;
+    /* padding: 50px 70px; */
     /* border: 3px solid red; */
     display: flex;justify-content: center;align-items: center;
+    flex-direction: column;
+}
+.blogs-section .head-blogs{
+    width: 100%;
+    /* width: min(100% - 0px, 95em);
+  margin-inline: auto; */
+    background-color: rgb(243, 242, 242);
+}
+.blogs-section .head-blogs>div{
+    width: min(100% - 0px, 95em);
+margin-inline: auto;  padding: 30px 70px;
+ }
+.head-blogs h2{
+    font-size: 28px;
+    font-weight: 700;
 }
 .blogs-section .all-blogs{
     width: min(100% - 0px, 95em);
   margin-inline: auto;
-    padding: 0;
+  padding: 50px 70px;
     /* border: 3px solid green; */
     display: flex;justify-content: space-between;
     align-items: center;
