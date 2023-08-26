@@ -102,8 +102,13 @@ width: 100%;
     font-size: 14px;font-weight: 600;text-decoration: none;
     padding: 15px 24px;margin-top: 30px;
     text-align: center;align-self: flex-end;
+    transition: all .4s ease-in-out;
  }
+ .content-contact .heure-et-coordonne .tel-number:hover{
+    color:#fff; background-color: var(--color1);
+    transition: all .4s ease-in-out;border-radius: 0;
 
+ }
 
 
  /* ...............   Media-Q of 910px   .......*/

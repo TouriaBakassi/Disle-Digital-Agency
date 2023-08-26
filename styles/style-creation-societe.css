@@ -22,11 +22,14 @@ body{
 .introduction-image-page h2{
 text-align: center;
 color: #fff;
-font-weight: 700;
+font-size: 22px;
+    font-weight: 700;
  }
  .introduction-image-page h4{
     text-align: center;
     color: #fff;
+    font-size: 14px;
+    font-weight: 700;
  }
 .pages-service1{
     width: 100%;
