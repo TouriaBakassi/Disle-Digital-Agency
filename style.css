@@ -548,7 +548,8 @@ nav > ul > li:hover .drop {
 .swiper1 {
   width: 100%;
   position: relative;
-  background: linear-gradient(to bottom, rgb(232, 140, 64), #000);
+  /* background: linear-gradient(to bottom, rgb(232, 140, 64), #000); */
+  background-color: #000;
 }
 
 .swiper1 .swiper-slide {
@@ -656,8 +657,24 @@ nav > ul > li:hover .drop {
 
 /* ........................... */
 .First-section .swiper-slide{
-  width: 80%;
-  background: linear-gradient(to bottom, rgb(232, 140, 64), #000);
+  width: 100%;
+  /* background: linear-gradient(to bottom, rgb(232, 140, 64), #000); */
+  /* background: url(./images/about-us.avif);
+  background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+}
+.First-section .swiper-slide:nth-child(1){
+  background: url(./images/pexels-pixabay-356830.jpg);
+  background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.First-section .swiper-slide:nth-child(2){
+  background: url(./images/bureau2.avif);
+  background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 /*...................Section 1 end */
 /* ............... Section 2 start ............. */
