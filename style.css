@@ -560,12 +560,12 @@ nav > ul > li:hover .drop {
   font-size: 22px;
   font-weight: bold;
   color: #fff;
-  padding: 85px 40px 85px 80px;
+  padding: 90px 40px 90px 80px;
   margin-top: 35px;
 }
 
 .swiper-slide div {
-  margin-top: 80px;
+  margin: 80px 0px 35px 0px;
   width: 90%;
   display: flex;
   justify-content: space-between;
@@ -2319,7 +2319,8 @@ footer {
   padding: 55px 40px 45px 80px;
 }
 .swiper1 .swiper-slide div {
-  margin-top: 0px;}
+  margin: 0px;
+}
 .swiper1 .swiper-slide h1 {
   font-size: 40px;
   font-weight: 800;
