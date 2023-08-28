@@ -31,10 +31,10 @@ var swiper = new Swiper(".mySwiper", {
 });
 // .................Loader page
 
-let loader = document.getElementById("loader");
-window.addEventListener("load", () => {
-  loader.style.display = "none";
-});
+// let loader = document.getElementById("loader");
+// window.addEventListener("load", () => {
+//   loader.style.display = "none";
+// });
 //.............. Swiper Two
 var swiper = new Swiper(".mySwiper2", {
   slidesPerView: 4,

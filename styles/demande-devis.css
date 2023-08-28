@@ -1,11 +1,12 @@
 
 .intro-demande-page{
     width: 100%;
-    height: 45vh;
+    height: 30vh;
     background: url(../images/about-us2.avif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    text-align: center;
 }
 .demande-devis-section{
     width: 100%;

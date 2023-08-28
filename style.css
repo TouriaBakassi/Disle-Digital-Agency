@@ -1,3 +1,4 @@
+/*  */
 @import url(./styles/style-creation-societe.css);
 
 @import url(./styles/style-blog.css);
@@ -249,10 +250,12 @@ nav {
   backdrop-filter: blur(10px); */
 }
 
-nav img {
+nav a {
   width: 10%;
 }
-
+nav a img{
+  width: 100%;
+}
 nav ul li {
   display: inline-block;
   padding: 0px 15px;
@@ -482,7 +485,10 @@ nav > ul > li:hover .drop {
   text-decoration: none;
   color: #fff;
 }
-
+.navbar-menu .menu-list li a.active {
+  
+  color: var(--color1);
+}
 .navbar-menu .menu-list li:hover a {
   color: var(--color1);
 }
@@ -492,7 +498,13 @@ nav > ul > li:hover .drop {
   justify-content: space-between;
   align-items: center;
 }
-
+.navbar-menu .little-navbar-menu details summary a{
+  text-decoration: none;
+  color: #fff;
+}
+.navbar-menu .little-navbar-menu details summary a.active{
+  color: var(--color1);
+}
 .navbar-menu .little-navbar-menu details summary:hover {
   color: var(--color1);
 }
@@ -541,13 +553,14 @@ nav > ul > li:hover .drop {
 
 .swiper1 .swiper-slide {
   width: 80%;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   font-size: 22px;
   font-weight: bold;
   color: #fff;
-  padding: 45px 40px 45px 80px;
+  padding: 85px 40px 45px 80px;
 }
 
 .swiper-slide div {
@@ -570,7 +583,7 @@ nav > ul > li:hover .drop {
 }
 
 .swiper1 .swiper-slide h1 {
-  font-size: 85px;
+  font-size: 60px;
   font-weight: 800;
 }
 
@@ -2296,19 +2309,20 @@ footer {
   }
   .swiper1 {
     width: 100%;
-    height: 70vh;
+    height: 46vh;
     position: relative;
   }
 .swiper1 .swiper-slide{
-  width: 80%;
+  width: 90%;
+  padding: 55px 40px 45px 80px;
 }
-  .swiper-slide h1 {
-    font-size: 40px;
-    font-weight: 800;
-  }
+.swiper1 .swiper-slide h1 {
+  font-size: 40px;
+  font-weight: 800;
+}
 
   .swiper-slide p {
-    font-size: 16px;
+    font-size: 14px;
     color: var(--color4);
   }
 
@@ -2590,16 +2604,29 @@ footer {
     font-size: 22px;
     font-weight: bold;
     color: #fff;
-    padding: 80px 20px 80px 20px;
+    padding: 90px 20px 80px 20px;
   }
   .swiper1 .swiper-slide h1 {
-    font-size: 34px;
+    font-size: 30px;
     font-weight: 800;
   }
   .swiper1 .swiper-slide p {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 800;
   }
+  .swiper1 .swiper-slide .btn {
+    position: relative;
+    margin: 15px 0px 0px 0px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+    padding: 22px 30px;
+    letter-spacing: 1.2px;
+    transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
+    cursor: pointer;
+    user-select: none;
+    text-align: left;
+}
   .work-description .call {
     width: 100%;
     display: flex;
