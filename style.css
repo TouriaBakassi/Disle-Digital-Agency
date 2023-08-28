@@ -244,7 +244,7 @@ nav {
   color: #fff;
   font-size: 16px;
   background-color: rgb(232, 140, 64);
-  position: relative;
+  position: fixed;top: 0;
   /* background-color: rgba(255, 255, 255, 0.3);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px); */
@@ -561,9 +561,11 @@ nav > ul > li:hover .drop {
   font-weight: bold;
   color: #fff;
   padding: 85px 40px 45px 80px;
+  margin-top: 30px;
 }
 
 .swiper-slide div {
+  margin-top: 80px;
   width: 90%;
   display: flex;
   justify-content: space-between;
@@ -2316,6 +2318,8 @@ footer {
   width: 90%;
   padding: 55px 40px 45px 80px;
 }
+.swiper1 .swiper-slide div {
+  margin-top: 0px;}
 .swiper1 .swiper-slide h1 {
   font-size: 40px;
   font-weight: 800;
