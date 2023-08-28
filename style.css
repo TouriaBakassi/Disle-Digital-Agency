@@ -560,8 +560,8 @@ nav > ul > li:hover .drop {
   font-size: 22px;
   font-weight: bold;
   color: #fff;
-  padding: 85px 40px 45px 80px;
-  margin-top: 30px;
+  padding: 85px 40px 85px 80px;
+  margin-top: 35px;
 }
 
 .swiper-slide div {
