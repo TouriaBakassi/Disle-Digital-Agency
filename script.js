@@ -249,6 +249,16 @@ navbarbtn.addEventListener("click", () => {
     navbarmenu.classList.remove("opened");
   });
 });
+
+let btntop=document.querySelector(".to-top");
+ window.addEventListener("scroll",()=>{
+  if (window.scrollY > 130) {
+    btntop.classList.add("top");
+  }else{
+    btntop.classList.remove("top");
+  }
+
+ });
 // // //  Counter-Up for Numbers (chiffres)
 // $('.count').counterUp({
 //   delay: 1,

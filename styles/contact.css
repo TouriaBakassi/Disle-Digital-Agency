@@ -1,147 +1,170 @@
+/* .........Style Page Contact */
 
+.contact-section {
+  width: 100%;
+}
+.head-contact {
+  width: 100%;
+  background-color: rgb(243, 242, 242);
+}
+.head-contact > div {
+  width: min(100% - 0px, 95em);
+  margin-inline: auto;
+  padding: 30px 70px;
+}
+.head-contact h2 {
+  font-size: 28px;
+  font-weight: 700;
+}
+.content-contact {
+  width: min(100% - 0px, 95em);
+  margin-inline: auto;
+  padding: 55px 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.content-contact .form {
+  width: 60%;
+}
+.content-contact h3 {
+  color: var(--color1);
+  font-size: 23px;
+  font-weight: 700;
+}
+.content-contact h4 {
+  color: var(--color1);
+  font-size: 18px;
+  font-weight: 500;
+}
+.content-contact p {
+  color: #000;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 10px 0px;
+}
+.content-contact .form form {
+  width: 80%;
+  padding: 30px;
+  background-color: rgb(175, 175, 175);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.form form label,
+.form form input,
+.form form select,
+.form form textarea {
+  max-width: 100%;
+  min-width: 100%;
+  padding: 6px 10px;
+}
+.form form label {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color1);
+}
+.form form input::placeholder,
+.form form textarea::placeholder {
+  color: #000;
+}
+.form form textarea {
+  max-height: 20vh;
+  min-height: 20vh;
+}
+.form form button {
+  width: 55%;
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.content-contact .heure-et-coordonne {
+  width: 35%;
+}
 
-.contact-section{
+.content-contact .heure-et-coordonne .heur-travail {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.content-contact .heure-et-coordonne ul {
+  list-style: none;
+  padding: 5px 0px;
+}
+.content-contact .heure-et-coordonne ul li {
+  color: #000;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 4px 0px;
+}
+.content-contact .heure-et-coordonne ul li i {
+  color: rgb(175, 175, 175);
+  font-size: 16px;
+}
+.content-contact .heure-et-coordonne .tel-number {
+  color: #fff;
+  background-color: #000;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 15px 24px;
+  margin-top: 30px;
+  text-align: center;
+  align-self: flex-end;
+  transition: all 0.4s ease-in-out;
+}
+.content-contact .heure-et-coordonne .tel-number:hover {
+  color: #fff;
+  background-color: var(--color1);
+  transition: all 0.4s ease-in-out;
+  border-radius: 0;
+}
+
+/* ...............   Media-Q of 910px   .......*/
+
+@media screen and (max-width: 910px) {
+  .content-contact {
     width: 100%;
-    /* padding: 50px 70px; */
-}
-.head-contact{
-   width: 100%;
-    background-color: rgb(243, 242, 242)
-}
-.head-contact>div{
-     width: min(100% - 0px, 95em);
-     margin-inline: auto; 
-    padding: 30px 70px;
-}
-.head-contact h2{
-    font-size: 28px;
-    font-weight: 700;
-}
-.content-contact{
-    width: min(100% - 0px, 95em);
-     margin-inline: auto; 
-    padding: 55px 70px;
-    display: flex;justify-content: space-between;align-items: flex-start;
-    flex-wrap: wrap;
-}
-.content-contact .form{
-    width: 60%;
-}
-.content-contact h3{
-   color: var(--color1);
-font-size: 23px;font-weight: 700;
-}
-.content-contact h4{
-    color: var(--color1);
- font-size: 18px;font-weight: 500;
- }
- .content-contact p{
-    color: #000;
- font-size: 15px;font-weight: 500;
- padding: 10px 0px;
- }
- .content-contact .form form{
-    width: 80%;
-    padding: 30px;
-    background-color: rgb(175, 175, 175);
-    border-radius: 10px;
+    padding: 55px;
     display: flex;
-    justify-content: space-between;align-items: flex-start;
-    flex-direction: column;
-}
-.form form label,.form form input,.form form select,.form form textarea{
-max-width:100% ;min-width:100% ;
-padding: 6px 10px;
-}
-.form form label{
-    font-size: 15px;
-    font-weight: 700;
-    color: var(--color1);
-}
-.form form input::placeholder, .form form textarea::placeholder{
-    color: #000;
-}
-.form form textarea{
-    max-height: 20vh;
-    min-height: 20vh;
-}
-.form form button{
-    width: 55%;
-    margin-top: 20px;
-    padding: 10px 15px;
-    background-color: #000;
-    color: #fff;
-    border-radius: 10px;
-    font-size: 18px;font-weight: 700;
-}
-.content-contact .heure-et-coordonne{
-    width: 35%;
-}
-/* .content-contact .heure-et-coordonne .cordonnes,.content-contact .heure-et-coordonne .heur-travail{
-width: 100%;
-} */
-.content-contact .heure-et-coordonne .heur-travail{
-    display: flex;justify-content: space-between;align-items: flex-start;
-    flex-direction: column;
-}
-.content-contact .heure-et-coordonne ul{
-   list-style: none;
-   padding: 5px 0px;
-}
-.content-contact .heure-et-coordonne ul li{
-    color: #000;
- font-size: 15px;font-weight: 500;
- padding: 4px 0px; 
- }
- .content-contact .heure-et-coordonne ul li i{
-    color: rgb(175, 175, 175);
- font-size: 16px;
- }
- .content-contact .heure-et-coordonne .tel-number{
-    color:#fff; background-color: #000;border-radius: 25px;
-    font-size: 14px;font-weight: 600;text-decoration: none;
-    padding: 15px 24px;margin-top: 30px;
-    text-align: center;align-self: flex-end;
-    transition: all .4s ease-in-out;
- }
- .content-contact .heure-et-coordonne .tel-number:hover{
-    color:#fff; background-color: var(--color1);
-    transition: all .4s ease-in-out;border-radius: 0;
-
- }
-
-
- /* ...............   Media-Q of 910px   .......*/
-
- @media screen and (max-width: 910px){
-    .content-contact{
-        width: 100%;
-        padding: 55px ;
-        display: flex;justify-content: flex-start;align-items: flex-start;
-        flex-wrap: wrap;
-    }
-    .content-contact .form{
-        width: 100%;
-        margin-bottom: 30px;
-    }
-    .content-contact .heure-et-coordonne{
-        width: 100%;
-    }
- }
-
- @media screen and (max-width: 510px){
-    .content-contact{
-        width: 100%;
-        padding: 55px 20px ;
-        display: flex;justify-content: flex-start;align-items: flex-start;
-        flex-wrap: wrap;
-    }
-    .content-contact .form form{
-        width: 100%;
-    }
-    .content-contact .heure-et-coordonne ul li{
-        color: #000;
-     font-size: 13px;font-weight: 500;
-     padding: 4px 0px; 
-     }
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
   }
+  .content-contact .form {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .content-contact .heure-et-coordonne {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .content-contact {
+    width: 100%;
+    padding: 55px 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .content-contact .form form {
+    width: 100%;
+  }
+  .content-contact .heure-et-coordonne ul li {
+    color: #000;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 4px 0px;
+  }
+}
