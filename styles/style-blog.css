@@ -98,7 +98,10 @@ body {
   .blogs-section {
     width: 100%;
     margin: 0;
-    padding: 50px 20px;
+    padding: 0px;
+  }
+  .blogs-section .all-blogs {
+    padding: 50px 30px;
   }
   .all-blogs .blog-item {
     width: 46%;
@@ -110,10 +113,10 @@ body {
   .blogs-section {
     width: 100%;
     margin: 0;
-    padding: 50px 20px;
   }
   .blogs-section .all-blogs {
     justify-content: center;
+    padding: 40px 5px;
   }
   .all-blogs .blog-item {
     width: 95%;
