@@ -2,24 +2,41 @@ let screen = window.innerWidth;
 console.log(screen);
 // ......Swiper One
 var swiper = new Swiper(".mySwiper", {
-  grabCursor: true,
-  loop: true,
-  autoplay: true,
-  delay: 9000,
-  effect: "creative",
-  creativeEffect: {
-    prev: {
-      shadow: true,
-      translate: ["-20%", 0, -1],
-    },
-    next: {
-      translate: ["100%", 0, 0],
-    },
+  effect: 'slide',
+  // fadeEffect: {
+  //   crossFade: true
+  // },
+  autoplay:true,
+  pagination: {
+    el: ".swiper-pagination",
+    enabled: true,
   },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+  controller: {
+    inverse: true,
   },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+  loop:true,
+  // // grabCursor: true,
+  // loop: true,
+  // autoplay: true,
+  // delay: 9000,
+  // // effect: "creative",
+  // // creativeEffect: {
+  // //   prev: {
+  // //     shadow: true,
+  // //     translate: ["-20%", 0, -1],
+  // //   },
+  // //   next: {
+  // //     translate: ["100%", 0, 0],
+  // //   },
+  // // },
+  // navigation: {
+  //   nextEl: ".swiper-button-next",
+  //   prevEl: ".swiper-button-prev",
+  // },
   // Responsive breakpoints
   breakpoints: {
     // when window width is >= 320px
