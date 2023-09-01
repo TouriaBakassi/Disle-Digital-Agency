@@ -1,4 +1,6 @@
-/*  */
+/* Tajawal Font */
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Space+Grotesk:wght@300;400;500;600;700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+/* Styles css */
 @import url(./styles/style-creation-societe.css);
 
 @import url(./styles/style-blog.css);
@@ -28,8 +30,12 @@ html {
 }
 
 body {
-  font-family: "Manrope", sans-serif;
+  /* font-family: "Manrope", sans-serif; */
+  font-family: 'Tajawal', sans-serif;
   width: 100%;
+}
+body:is(h1,h2,h3,h4,h5,h6){
+  font-family: "Manrope", sans-serif;
 }
 /* */
 .contain {
@@ -640,8 +646,8 @@ padding: 6px;
 /*...................Section 1 end */
 /* ............... Section 2 start ............. */
 .section2 {
-  background-color: #000;
-  width: 100%;
+  /* background-color: #000; */
+  background-color: rgb(230, 230, 230);  width: 100%;
   position: relative;
   margin-block-start: 80px;
 }
@@ -653,9 +659,12 @@ padding: 6px;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  color: #fff;
+  color: #000;
 }
-
+.title-section2>p{
+  font-size: 16px;
+  font-weight: 500;
+}
 .title div {
   width: 50%;
 }
@@ -671,7 +680,8 @@ padding: 6px;
 }
 
 .title-section2 div h3 {
-  color: #ffffff;
+  /* color: #ffffff; */
+  color: #000;
   font-weight: 800;
   font-size: 40px;
 }
@@ -1411,16 +1421,17 @@ padding-top: 60px 0px 0px 30px ;
   width: 100%;
   font-size: 16px;
   font-weight: 500;
+  text-align:justify;
 }
 .title-section8 div p {
   color: #cccccc;
 }
 .section8 .swiper-button {
-
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 30px 20px 10px 0px;
+  padding: 30px 80px 10px 0px;
+  align-self: flex-end;
 }
 .section8 .swiper-button-next,
 .section8 .swiper-button-prev {
@@ -1456,6 +1467,9 @@ padding-top: 60px 0px 0px 30px ;
   width: 55%;
   height: 100%;
   background-color: #fff;
+  display: flex;justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .testimonials {
   width: 100%;
@@ -1477,9 +1491,10 @@ padding-top: 60px 0px 0px 30px ;
   border-radius: 40px 0px 0px 0px;
 }
 .testimonial p {
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 500;
-  /* font-style: italic; */
+  font-style: italic;
+  /* text-align: center; */
   color: #3e3e3e;
 }
 .testimonial i {
@@ -1492,16 +1507,20 @@ padding-top: 60px 0px 0px 30px ;
   animation: none;
   width: 100%;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
   flex-direction: row;
   margin: 0;
   /* position: absolute;bottom: -8%; */
+}
+.testimonial .customer img{
+  width: 50px;
 }
 .testimonial .customer div {
   animation: none;
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   flex-direction: column;
   padding: 5px 10px;
   vertical-align: bottom;
@@ -1516,6 +1535,7 @@ padding-top: 60px 0px 0px 30px ;
 .testimonial .customer div p {
   font-size: 13px;
   font-weight: 400;
+  margin: 0;
 }
 /* ................. Section 8 end ............. */
 /* ................. Section 9 Start ............. */
@@ -1539,9 +1559,10 @@ padding-top: 60px 0px 0px 30px ;
   font-weight: 600;
   color: var(--color3);
   word-spacing: 5px;
-  text-align-last: left;
+  /* text-align-last: left; */
+  text-align: center;
 }
-.swiper5  p::first-letter{
+.swiper5  p:nth-child(1):first-letter{
   font-size: 30px;
   color: var(--color1);
 }
@@ -1686,7 +1707,7 @@ padding-top: 60px 0px 0px 30px ;
   width: 100%;
   transition: all 0.4s ease-in-out;
 }
-.section10 .blogs.swiper-wrapper .blog.swiper-slide .image-blog img:hover {
+.section10 .blogs.swiper-wrapper .blog.swiper-slide:hover .image-blog img {
   transform: scale(1.1);
   transform-origin: center;
   transition: all 0.4s ease-in-out;
@@ -1761,7 +1782,7 @@ padding-top: 60px 0px 0px 30px ;
   padding: 5px 0px;
   transition: all 0.3s ease-in-out;
 }
-.section10 .blogs.swiper-wrapper .blog.swiper-slide .information-blog h3:hover {
+.section10 .blogs.swiper-wrapper .blog.swiper-slide:hover .information-blog h3 {
   color: var(--color1);
   transition: all 0.3s ease-in-out;
 }
