@@ -411,7 +411,7 @@ nav > ul > li:hover .drop {
 }
 
 .nav2 .search {
-  padding: 0px 0px 0px 5px;
+  padding: 0px 10px 0px 5px;
   border-left: 1px solid #9f9f9f;
 }
 
@@ -451,6 +451,7 @@ nav > ul > li:hover .drop {
 .navbar-menu .menu-close {
   align-self: flex-end;
   margin-bottom: 50px;
+  padding: 15px 20px 0px 0px;
 }
 
 .navbar-menu .menu-close i {
