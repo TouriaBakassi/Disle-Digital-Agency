@@ -448,12 +448,12 @@ nav > ul > li:hover .drop {
   align-items: flex-start;
   flex-direction: column;
   transform: translateX(350%);
-  transition: all 1s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 
 .navbar-menu.opened {
   transform: translateX(0%);
-  transition: all 1s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 
 .navbar-menu .menu-close {
@@ -554,7 +554,7 @@ nav > ul > li:hover .drop {
 .navbar-menu .menu-reseaux i:hover {
   color: var(--color1);
   transform: rotateY(180deg);
-  transition: all 0.5s ease-in;
+  transition: all .5s ease-in;
 }
 
 /* .......................... NAVBAR-MENU End......... */
