@@ -93,17 +93,18 @@ body {
 .page1-article .content-article {
   width: 48%;
 }
-.page1-article .content-article h4 {
-  font-size: 26px;
+.page1-article .content-article h1 {
+  font-size: 32px;
   font-weight: 800;
   padding: 15px 0px;
 }
 .page1-article .content-article h2 {
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 600;
+  padding: 6px 0px;
 }
-.page1-article .content-article h3 {
-  font-size: 16px;
+.page1-article .content-article p {
+  font-size: 15px;
   font-weight: 600;
 }
 .page1-article2 {
@@ -135,7 +136,7 @@ body {
     padding: 20px 0px;
   }
   .page1-article .content-article h2 {
-    font-size: 28px;
+    font-size: 22px;
     font-weight: 800;
   }
   .page1-article .content-article p {
