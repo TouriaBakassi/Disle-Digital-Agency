@@ -1,4 +1,6 @@
 /* Tajawal Font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Satisfy&family=Space+Grotesk:wght@300;400;500;600;700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Space+Grotesk:wght@300;400;500;600;700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
 /* Styles css */
 @import url(./styles/style-creation-societe.css);
@@ -31,12 +33,18 @@ html {
 
 body {
   /* font-family: "Manrope", sans-serif; */
-  font-family: 'Tajawal', sans-serif;
+  /* font-family: 'Tajawal', sans-serif; */
   width: 100%;
 }
-body:is(h1,h2,h3,h4,h5,h6){
-  font-family: "Manrope", sans-serif;
+body h1,body h2,body h3,body h4,body h5,body h6 {
+  font-family: 'Tajawal', sans-serif; 
+    /* font-family: "Open Sans", sans-serif; */
 }
+body p {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #535353;
+}
+
 /* */
 .contain {
   width: min(100% - 0px, 95em);
@@ -946,9 +954,9 @@ padding: 6px;
   font-size: 40px;
 }
 
-.title-section4 p {
-  color: #000;
-}
+/* .title-section4 p {
+  /* color: #000; 
+} */
 
 .section4-content {
   padding: 30px 70px;
@@ -1420,6 +1428,7 @@ padding-top: 60px 0px 0px 30px ;
 }
 .title-section8 p {
   width: 100%;
+  /* font-family: "Open Sans", sans-serif; */
   font-size: 16px;
   font-weight: 500;
   text-align:justify;
@@ -1558,7 +1567,8 @@ padding-top: 60px 0px 0px 30px ;
 .swiper5  p{
   font-size: 16px;
   font-weight: 600;
-  color: var(--color3);
+  /* color: var(--color3); */
+  color: #535353;
   word-spacing: 5px;
   /* text-align-last: left; */
   text-align: center;
@@ -2127,7 +2137,10 @@ opacity: 1;
 transform: translateY(0px);
 transition: all .4s ease-in-out;
 }
-
+body p {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #535353;
+}
 /* -------------------------------------------------------------  Media Query of 1095
 -------------------------------------------------------------------------------------- */
 @media screen and (max-width: 1095px) {

@@ -85,13 +85,14 @@ body {
   flex-wrap: wrap;
 }
 .page1-article .img-article {
-  width: 48%;
+  width: 42%;
+  padding: 20px;
 }
 .page1-article .img-article img {
   width: 100%;
 }
 .page1-article .content-article {
-  width: 48%;
+  width: 55%;
 }
 .page1-article .content-article h1 {
   font-size: 32px;
