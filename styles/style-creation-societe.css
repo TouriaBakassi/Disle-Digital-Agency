@@ -106,6 +106,7 @@ body {
 .page1-article .content-article p {
   font-size: 15px;
   font-weight: 600;
+ text-align: justify;
 }
 .page1-article2 {
   flex-flow: row-reverse;

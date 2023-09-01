@@ -226,16 +226,16 @@ window.addEventListener("scroll", () => {
   }
 });
 //  ........................Show Search Page
-let searchpage = document.getElementById("search-page");
-let searchbtn = document.getElementById("search-btn");
-let searchclose = document.getElementById("search-close-btn");
+// let searchpage = document.getElementById("search-page");
+// let searchbtn = document.getElementById("search-btn");
+// let searchclose = document.getElementById("search-close-btn");
 
-searchbtn.addEventListener("click", () => {
-  searchpage.classList.add("open");
-  searchclose.addEventListener("click", () => {
-    searchpage.classList.remove("open");
-  });
-});
+// searchbtn.addEventListener("click", () => {
+//   searchpage.classList.add("open");
+//   searchclose.addEventListener("click", () => {
+//     searchpage.classList.remove("open");
+//   });
+// });
 
 // .......................Show navbar-menu
 
