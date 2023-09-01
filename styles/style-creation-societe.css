@@ -80,19 +80,19 @@ body {
   width: 100%;
   padding: 40px 0px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
 .page1-article .img-article {
-  width: 42%;
+  width: 44%;
   padding: 20px;
 }
 .page1-article .img-article img {
   width: 100%;
 }
 .page1-article .content-article {
-  width: 55%;
+  width: 46%;
 }
 .page1-article .content-article h1 {
   font-size: 32px;
