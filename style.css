@@ -1212,6 +1212,7 @@ padding: 6px;
 .swiper2 .swiper-slide img {
   display: block;
   width: 100%;
+  height: 54vh;
   object-fit: cover;
   position: relative;
 }
@@ -1707,6 +1708,7 @@ padding-top: 60px 0px 0px 30px ;
   border: 1px solid var(--color2);
   margin: 0px;
   background-color: #ffffff;
+  text-decoration: none;
 }
 .section10 .blogs.swiper-wrapper .blog.swiper-slide .image-blog {
   width: 100%;
