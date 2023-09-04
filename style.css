@@ -1695,7 +1695,7 @@ padding-top: 60px 0px 0px 30px ;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 .swiper6 .blogs.swiper-wrapper .blog.swiper-slide {
   position: relative;
